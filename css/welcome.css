@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.avatar-padding {
+    padding: 8%;
+}
+.explore{
+  align-items: center;
+}
+.is-left-paddingless{
+  padding-left: 0 !important;
+}
+input#search.search {
+  font-size: 1.5rem !important;
+  width: 100%;
+  padding: .5rem !important;
+  padding-left: 3rem !important;
+}
+.fa-search {
+  font-size: 1.5rem;
+  margin-left: 1%;
+}
+.search-home input[type=text]{
+  border: 0px solid white;
+  background-color: white;
+  outline: none;
+  width: 100%;
+  background-color: white;
+  padding: 1.2%;
+  margin-top: 4%;
+}
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+.input-wrapper:before, .input-wrapper:after {
+  content: "\f002";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-size: 1.4rem !important;
+  position: absolute;
+  top: 41px;
+  left: 0.9rem;
+}
+.category-text {
+  padding-right: 5%;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+.bgimg-1, .image-welcome, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bgimg-1 {
+  background-image: url("../image/home-background.jpg");
+  background-size: 100% 100%;
+  min-height: 200px;
+}
+.hero-image {
+  background-image: url("../image/welcome-image.jpg");
+  background-size: cover;
+  align:middle;
+}
+.caption, .caption-header {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.chooseus{
+  position: absolute;
+  left: 0;
+  top: 9%;
+  width: 100%;
+  text-align: center;
+}
+.caption-header-logo {
+  position: relative;
+  text-shadow: 2px 2px 2px #000;
+}
+.middle-caption-header {
+  margin-top: 120px;
+}
+.caption-a {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+.caption-b {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption-opening {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border, .caption-a span.border, .caption-b span.border, .caption-opening span.border, .caption-header span.border, .caption-header-logo span.border{
+  color: #fff;
+  font-size: 25px;
+  font-weight:100px;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}

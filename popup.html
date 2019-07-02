@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOOKA</title>
+    <!-- header & footer use this css -->
+    <link rel="icon" href="image/web-logo-thumbnails.png">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bulma-badge.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <!-- header & footer use this css -->
+
+    <!-- universal css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- universal css -->
+
+    <!-- welcome use this css -->
+    <link rel="stylesheet" href="css/welcome.css">
+ 
+    <!-- product use this css -->
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/price-range.css">
+    <link rel="stylesheet" href="css/use-product.css">
+    <link rel="stylesheet" href="css/elegant-font/html-css/style.css">
+    <link rel="stylesheet" href="css/star-rating-svg.css">
+    <!-- product use this css -->
+  </head>
+  <body>
+
+<div class="modal is-active">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head is-radiusless">
+      <p class="modal-card-title is-size-5">
+        Shopping cart
+      </p>
+        <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body is-paddingless">
+      <div class="box is-radiusless is-shadowless">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <span class="has-text-weight-semibold is-size-6">Banana boat</span>
+              <span class="has-text-weight-semibold fs-14 is-pulled-right has-text-grey">
+                <span class="is-hidden-mobile">IDR. 100.000</span>
+                <i class="fal fa-times p-l-25"></i>
+              </span>
+              <p class="fs-14 m-b-0">Booking date: 3 Juni 2019</p>
+              <p class="fs-14 m-b-0">Booking time: 14.00 WITA</p>
+              <p class="fs-14 is-hidden-tablet is-hidden-desktop">Price: IDR. 100.000</p>
+            </div>
+          </div><!--/media-content-->
+        </article>
+        <hr class="m-t-8 m-b-8 m-l-0 m-r-0">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <span class="has-text-weight-semibold is-size-6">Banana boat</span>
+              <span class="has-text-weight-semibold fs-14 is-pulled-right has-text-grey">
+                <span class="is-hidden-mobile">IDR. 100.000</span>
+                <i class="fal fa-times p-l-25"></i>
+              </span>
+              <p class="fs-14 m-b-0">Booking date: 3 Juni 2019</p>
+              <p class="fs-14 m-b-0">Booking time: 14.00 WITA</p>
+              <p class="fs-14 is-hidden-tablet is-hidden-desktop">Price: IDR. 100.000</p>
+            </div>
+          </div><!--/media-content-->
+        </article>
+        <hr class="m-b-15">
+        <p class="is-size-6 m-t-0 has-text-weight-semibold">Total: <span class="is-pulled-right">IDR. 120.000</span></p>
+      </div><!--/box-->
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot is-radiusless p-l-15 p-r-15">
+      <button class="button is-fullwidth is-radiusless">Show item</button>
+      <button class="button is-dark is-fullwidth is-radiusless">Procced to checkout</button>
+    </footer>
+  </div><!--/modal-cart-->
+</div><!--/modal-->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/seen-notif.js"></script>
+    <script src="js/bulma.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/jquery.star-rating-svg.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF9BOyzOCk8jVFsQ9z1qhxzt3t35z0AR4&callback=initMap" async defer></script>
+
+    <script>
+      $(".rating-product").starRating({
+        totalStars: 5,
+        starShape: 'rounded',
+        readOnly: true,
+        starSize: 13,
+        emptyColor: 'lightgray',
+        activeColor: '#CCCC00',
+        useGradient: false
+      });
+    </script>
+ 
+    <script>
+      function initMap() {
+        var myLatLng = {
+          lat: -8.753199,
+          lng: 115.219950
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: myLatLng,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+        });
+      }
+    </script>
+  </body>
+</html>

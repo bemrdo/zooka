@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.footer {
+    padding-bottom: 1rem;
+}
+
+.margin-copyright {
+    margin-top: -1rem;
+}
+
+.zooka-warning {
+    background-color: #ffc531;
+    border-color: transparent;
+    color: #4a4a4a;
+}
+
+.padding-zoofooter {
+    padding-top: 0.6em;
+    width: 50%;
+}
+
+.margin-about {
+    margin-top: 0.8rem;
+}
+
+.padding-news {
+    padding-left: 7%;
+}
+
+.padding-info {
+    padding-left: 6%;
+}
+
+.keranjang {
+    width: 250px;
+}
+
+.keranjang-isi {
+    max-height: 150px;
+}
+
+.keranjang-isi img {
+    max-height: 100%;
+}
+
+.avatar-padding {
+    padding: 8%;
+}
+
+.margin-hr {
+    margin-top: 1rem;
+}
+
+.padding-map {
+    padding-bottom: 0;
+}
+
+.navbar-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.kosong-cart {
+    background-image: url("../image/zooka-empty.png");
+    min-height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .padding-news {
+        padding-left: 12px;
+    }
+
+    .padding-info {
+        padding-left: 10px;
+    }
+}

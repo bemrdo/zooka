@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/*
+ * HEADER *
+ */
+
+[data-badge]::after {
+    box-shadow: 0 0 0 3px #363636 !important;
+}
+
+[data-badge].has-badge-danger:hover::after {
+    box-shadow: 0 0 0 3px #292929 !important;
+}
+
+.navbar-bell a {
+    top: calc(50% - 9px);
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-bell {
+    color: #4a4a4a;
+    cursor: pointer;
+    display: block;
+    height: 3.25rem;
+    position: relative;
+    width: 3.25rem;
+    margin-left: auto;
+}
+
+.navbar-bell a {
+    display: block;
+    height: 1px;
+    left: calc(50% - 8px);
+    position: absolute;
+}
+
+.navbar-cart a {
+    top: calc(50% - 9px);
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-cart {
+    color: #4a4a4a;
+    cursor: pointer;
+    display: block;
+    height: 3.25rem;
+    position: relative;
+    width: 3.25rem;
+}
+
+.navbar-cart a {
+    display: block;
+    height: 1px;
+    left: calc(50% - 8px);
+    position: absolute;
+}
+
+/*
+ * HEADER *
+ */
+
+
+/*
+ * FOOTER *
+ */
+
+.footer {
+    padding-bottom: 1rem;
+}
+
+.margin-copyright {
+    margin-top: -1rem;
+}
+
+.padding-zoofooter {
+    padding-top: 0.6em;
+    width: 50%;
+}
+
+.margin-about {
+    margin-top: 0.8rem;
+}
+
+.padding-news {
+    padding-left: 7%;
+}
+
+.padding-info {
+    padding-left: 6%;
+}
+
+.center {
+    text-align: center;
+}
+
+.control .btn {
+    transition: .2s;
+    color: #202020;
+    text-align: center;
+    margin: 0 0 0 2px;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #f1c40f;
+    transform: rotate(45deg);
+    top: 40px;
+    left: -80px;
+}
+
+.btn:hover::before {
+    animation: socmed 0.7s 1;
+    top: -20px;
+    left: -20px;
+}
+
+.btn i {
+    display: block;
+    font-size: 16px;
+    line-height: 36px;
+    transition: .2s linear;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    color: #4a4a4a;
+    overflow: hidden;
+    transition: .1s;
+}
+
+.zooka-warning {
+    background-color: #f39c12;
+    border-color: transparent;
+    color: #4a4a4a;
+}
+
+.center .btn i:hover {
+    transform: scale(1.3);
+}
+
+.control .btn i:hover {
+    transform: scale(1.15);
+}
+
+@keyframes socmed {
+    0% {
+        top: 40px;
+        left: -80px;
+    }
+
+    50% {
+        top: -45px;
+        left: 5px;
+    }
+
+    100% {
+        top: -20px;
+        left: -20px;
+    }
+}
+
+/*
+ * FOOTER *
+ */

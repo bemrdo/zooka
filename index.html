@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOOKA</title>
+    <!-- header & footer use this css -->
+    <link rel="icon" href="image/web-logo-thumbnails.png">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bulma-badge.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <!-- header & footer use this css -->
+
+    <!-- universal css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- universal css -->
+
+    <!-- welcome use this css -->
+ 
+    <!-- product use this css -->
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/price-range.css">
+    <link rel="stylesheet" href="css/use-product.css">
+    <link rel="stylesheet" href="css/star-rating-svg.css">
+    <!-- product use this css -->
+    <style>
+      .column .item-product:first-child { 
+        margin-top: -250px !important;
+      } 
+      .has-background-transparent {
+        background: transparent !important;
+      }
+      .is-zooka-orange {
+        background-color: #E67E22;
+        border-color: transparent;
+        color: #fff;
+      }
+      .is-zooka-tag{
+        background-color: #fff !important;
+        -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+      }
+      .is-zooka-tag:hover{
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 6px 0px rgba(230,126,34,0.55);
+        -moz-box-shadow: 0px 0px 6px 0px rgba(230,126,34,0.55);
+        box-shadow: 0px 0px 6px 0px rgba(230,126,34,0.55);
+      }
+      .has-text-zooka-orange {
+        color: #e67e22;
+      }
+      .explore{
+        align-items: center;
+      }
+      .border-benefit{
+        border: .08em solid #fff;
+        border-radius: 50%;
+        padding: .2em .25em .15em;
+      }
+      .button.is-register-zooka.is-inverted.is-outlined {
+        background-color: transparent;
+        border-color: #fff;
+        color: #fff;
+      }
+      .button.is-primary.is-resgister-zooka.is-inverted.is-outlined:focus, .button.is-primary.is-resgister-zooka.is-inverted.is-outlined:hover {
+        background-color: transparent;
+        border-color: #e67e22;
+        color: #e67e22;
+      }
+      @media screen and (min-width: 1024px) {
+        .content{
+          margin-left: 0px !important;
+          margin-right: 0px !important;
+        }
+      }
+      @media screen and (min-width: 1088px) {
+        .first-benefit{
+          padding-left: 0px !important;
+        }
+      }
+      @media screen and (min-width: 1440px) {
+        .input-home{
+          width: 360px;
+        }
+      }
+      @media screen and (min-width: 1920px) {
+        .input-home{
+          width: 550px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--/NAVBAR-->
+    <nav class="navbar is-dark is-fixed-top is-unselectable" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item is-hidden-touch" href="https://bulma.io">
+            <img src="image/zookawatersports.png" alt="logo zooka">
+          </a>
+          <a class="navbar-item is-hidden-desktop" href="#">
+            <img src="image/zooka-thumbnails-light.png" alt="logo zooka">
+          </a>
+ 
+          <div class="navbar-bell burger is-hidden-desktop">
+            <a href="">
+              <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="3">
+                <i class="fas fa-lg fa-bell"></i>
+              </span>
+            </a>
+          </div>
+          <div class="navbar-cart burger is-hidden-desktop">
+            <a href="">
+              <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="4">
+                <i class="fas fa-lg fa-shopping-cart"></i>
+              </span>
+            </a>
+          </div>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="zooka-navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div><!--/navbar-brand-->
+ 
+        <div id="zooka-navbar" class="navbar-menu">
+          <div class="navbar-end p-t-0 p-b-0">
+
+            <div class="navbar-item">
+              <div class="control has-icons-left">
+                <input class="input input-home" type="text" placeholder="Search...">
+                <span class="icon is-small is-left">
+                  <i class="far fa-search"></i>
+                </span>
+              </div><!--/control-->
+            </div><!--/navbar-item-->
+            
+            <a class="navbar-item" href="">
+              Home
+            </a>
+            <a class="navbar-item" href="">
+              All Activities
+            </a>
+            <a class="navbar-item" href="">
+              Blog
+            </a>
+ 
+            <!--/cart-->
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <span class="has-badge-rounded has-badge-danger" data-badge="3">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </a>
+ 
+              <div class="navbar-dropdown is-right is-boxed w-250">
+                <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top">
+                  Total: 0 Items
+                </div><!--/navbar-dropdown is-right is-boxed-->
+                <hr class="navbar-divider">
+                <div class="dropdown-content navbar-item is-radiusless is-shadowless is-clipped">
+                  <article class="media">
+                    <figure class="media-content">
+                      <p class="image m-l-10 m-t-10 m-r-10 m-b-10">
+                        <img class="img-fit w-full dis-block max-h-240 m-l-r-auto" src="image/zooka-empty.png">
+                      </p>
+                    </figure>
+                  </article>
+                </div><!--/dropdown-content-->
+ 
+              </div><!--/navbar-dropdown-->
+            </div><!--/navbar-item-->
+            <!--/cart-->
+ 
+            <!--/notification-->
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <span class="has-badge-rounded has-badge-danger" data-badge="4">
+                  <i class="fas fa-bell"></i>
+                </span>
+              </a>
+              <div class="navbar-dropdown is-right is-boxed w-365">
+                <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top dis-inline">
+                  <span>Notification</span>
+                  <a class="tandai is-pulled-right">Tandai semua &nbsp;&nbsp;</a>
+                </div>
+                <hr class="navbar-divider">
+                <div class="has-text-centered">
+                  <p class="title has-text-grey-light p-t-20">
+                    <i class="fal fa-bells fa-2x"></i>
+                  </p>
+                  <p class="subtitle has-text-grey-light p-t-10 p-b-20">No Notification</p>
+                </div>
+              </div>
+            </div>
+            <!--/notification-->
+
+            <a class="navbar-item" href="">
+              Login 
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="">
+              Register 
+            </a>
+
+            <!--/ Register -->
+            <div class="navbar-item is-hidden-touch">
+              <a class="button is-primary is-resgister-zooka is-inverted is-outlined">
+                Register
+              </a>
+            </div><!--/navbar-item-->
+            <!--/ Register -->
+
+          </div><!--/navbar-end-->
+        </div><!--/navbar-menu-->
+      </div><!--/container-->  
+    </nav>
+    <!--/NAVBAR-->
+
+    <!--/ SLIDER -->
+    <section class="section is-marginless is-paddingless">
+      <figure class="image is-3by1 m-t-52">
+        <img src="image/header-product.jpg">
+      </figure>
+    </section>
+    <!--/ SLIDER -->
+ 
+    <!--/ BENEFIT -->
+    <section class="section is-marginless is-paddingless has-background-white-ter">
+      <div class="container">
+        <div class="columns is-multiline is-gapless">
+
+          <div class="column is-one-third">
+            <div class="box is-shadowless has-background-transparent pos-relative first-benefit">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64 border-benefit has-background-white">
+                    <i class="fal fs-32 fa-fw fa-shuttle-van p-t-13 p-l-8"></i>
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="title has-text-zooka-orange is-size-6 p-b-5">Free Transport</p>
+                    <p class="subtitle is-size-7">
+                      We provide you free transport from your hotel to Zooka and put you back to hotel, by order our activities from this website
+                    </p>
+                  </div>
+                </div><!--/media-content-->
+              </article>
+            </div><!--/box-->
+          </div><!--/column-->
+
+          <div class="column is-one-third">
+            <div class="box is-shadowless has-background-transparent pos-relative">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64 border-benefit has-background-white">
+                    <i class="fal fs-32 fa-fw fa-hands-helping p-t-11 p-l-6"></i>
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="title has-text-zooka-orange is-size-6 p-b-5">Insurance Guarantee</p>
+                    <p class="subtitle is-size-7">
+                      Don't worry for play in our watersports and underwater activities, you have protected by our insurance up to IDR 80 million
+                    </p>
+                  </div>
+                </div><!--/media-content-->
+              </article>
+            </div><!--/box-->
+          </div><!--/column-->
+
+          <div class="column is-one-third">
+            <div class="box is-shadowless has-background-transparent pos-relative">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64 border-benefit has-background-white">
+                    <i class="fal fs-32 fa-fw fa-money-check-alt p-t-11 p-l-6"></i>
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="title has-text-zooka-orange is-size-6 p-b-5">Easy Payment</p>
+                    <p class="subtitle is-size-7">
+                      Take your experience in our easy payment, we provide secure and reachable payment methods that support cash, onsite and down payment
+                    </p>
+                  </div>
+                </div><!--/media-content-->
+              </article>
+            </div><!--/box-->
+          </div><!--/column-->
+
+        </div><!--/columns is-multiline-->
+      </div><!--/container-->
+    </section>
+    <!--/ BENEFIT -->
+
+    <!--/ POPULAR SEARCH -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-fifth">
+            <span class="is-size-4 has-text-weight-semibold p-b-10 m-r-50">Popular Search</span>
+          </div><!--/column is-one-fifth-->
+          <div class="column">
+            <div class="tags">
+              <span class="tag is-rounded is-medium is-zooka-tag m-r-20">Banana Boat</span>
+              <span class="tag is-rounded is-medium is-zooka-tag m-r-20">Parasailing Adventure</span>
+              <span class="tag is-rounded is-medium is-zooka-tag m-r-20">Rolling Donut</span>
+              <span class="tag is-rounded is-medium is-zooka-tag m-r-20">Diving</span>
+              <span class="tag is-rounded is-medium is-zooka-tag m-r-20">Snorkelling</span>
+              <span class="tag is-rounded is-medium is-zooka-tag m-r-20">Jetski</span>
+            </div><!--/tags-->
+          </div><!--/column-->
+        </div><!--/columns-->
+      </div><!--/container-->
+    </section>
+    <!--/ POPULAR SEARCH -->
+
+    <!--/ VOUCHER -->
+    <section class="section p-t-0 is-hidden-mobile">
+      <div class="container">
+        <div class="tile is-ancestor">
+          <div class="tile is-6 is-parent">
+            <div class="tile is-child box is-radiusless is-paddingless is-shadowless">
+              <figure class="image img-fit is-3by2">
+                <img src="https://bulma.io/images/placeholders/480x320.png">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-4 is-vertical">
+            <div class="tile is-parent">
+              <div class="tile is-child box is-radiusless is-paddingless is-shadowless">
+                <figure class="image img-fit is-2by1">
+                  <img src="https://bulma.io/images/placeholders/640x320.png">
+                </figure>
+              </div>
+            </div>
+            <div class="tile">
+              <div class="tile is-parent">
+                <div class="tile is-child box is-radiusless is-paddingless is-shadowless">
+                  <figure class="image img-fit is-1by1">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <div class="tile is-child box is-radiusless is-paddingless is-shadowless">
+                  <figure class="image img-fit is-1by1">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-2 is-parent">
+            <div class="tile is-child box is-radiusless is-paddingless is-shadowless">
+              <figure class="image img-fit"><!--/CUSTOM SIZE IMAGE 204x443.98-->
+                <img src="https://bulma.io/images/placeholders/320x640.png">
+              </figure>
+            </div>
+          </div>
+        </div><!--/tile is-ancestor-->
+      </div><!--/container-->
+    </section>
+    <!--/ VOUCHER -->
+    
+    <!--/ PRODUCT -->
+    <section class="section is-zooka-orange">
+      <div class="container">
+        <p class="is-size-4 is-size-5-touch has-text-weight-semibold">Top-rated Experiences</p>
+        <p class="is-size-6 is-size-7-touch p-b-20">Book activities lead by local hosts on your next trip</p>
+
+        <!-- ITEM -->
+        <div class="columns is-multiline is-mobile">
+
+          <!-- PRODUCT -->
+          <div class="column is-half-mobile is-one-third-tablet is-one-fifth-desktop is-one-fifth-fullhd item-product">
+            <div class="card hvr-shadow">
+              <div class="card-image is-clipped is-relative is-overlay block2-labelsale">
+                <figure class="image is-1by1">
+                    <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                </figure>
+                <div class="block2-overlay trans-0-4">
+                  <a href="#" class="hov-pointer trans-0-4 is-size-4 block2-btn-towishlist">
+                    <i class="icon-wishlist fal fa-heart" aria-hidden="true"></i>
+                  </a>
+                  <div class="block2-btn-detail w-size1 trans-0-4">
+                    <a class="get-product" href="">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="content has-text-centered mtb-15">
+                  <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                    <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                  </p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="rating-product" data-rating="4"></span>
+                  </p>
+                </div><!--/content-->
+              </div><!--/card-content-->
+            </div><!--/card-->
+          </div><!--/column-->
+          <!-- PRODUCT -->
+
+        </div><!--/columns container is-multiline-->
+        <!-- ITEM -->
+      </div><!--/container-->
+    </section>
+    <!--/ PRODUCT -->
+
+    <!--/ EXPLORE CATEGORY -->
+    <section class="section">
+      <div class="container">
+        <p class="is-size-4 is-size-5-touch has-text-weight-semibold p-b-20">Explore Category</p>
+        <div class="columns is-mobile is-multiline is-vcentered">
+          <div class="column is-one-quarter-tablet is-three-quarters-mobile">
+            <a href="">
+              <div class="box is-radiusless is-left-paddingless hvr-shadow p-l-0 p-t-10 p-b-10">
+                <article class="media explore">
+                  <div class="media-left">
+                    <figure class="image is-96x96 img-explore">
+                      <img src="image/watersports.jpg" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p class="is-size-4 is-size-6-touch">Watersports</p>
+                    </div>
+                  </div>
+                </article>
+              </div><!--/box-->
+            </a>
+          </div><!--/column-->
+          
+          <div class="column is-one-quarter-tablet is-three-quarters-mobile">
+            <a href="">
+              <div class="box is-radiusless is-left-paddingless hvr-shadow p-l-0 p-t-10 p-b-10">
+                <article class="media explore">
+                  <div class="media-left">
+                    <figure class="image is-96x96">
+                      <img src="image/underwater.jpg" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p class="is-size-4 is-size-6-touch">Underwater</p>
+                    </div>
+                  </div>
+                </article>
+              </div><!--/box-->
+            </a>
+          </div><!--/column-->
+          
+          <div class="column is-one-quarter-tablet is-three-quarters-mobile">
+            <a href="">
+              <div class="box is-radiusless is-left-paddingless hvr-shadow p-l-0 p-t-10 p-b-10">
+                <article class="media explore">
+                  <div class="media-left">
+                    <figure class="image is-96x96">
+                      <img src="image/package.jpg" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p class="is-size-4 is-size-6-touch">Packages</p>
+                    </div>
+                  </div><!--/media-content-->
+                </article>
+              </div><!--/box-->
+            </a>
+          </div><!--/column-->
+      </div><!--/container-->
+    </section>
+    <!--/ EXPLORE CATEGORY -->
+
+    <!--/ ACTIVITY -->
+    <section class="section p-t-0">
+      <div class="container">
+        <p class="is-size-4 is-size-5-touch has-text-weight-semibold p-b-20">Our Activities</p>
+
+        <!-- ITEM -->
+        <div class="columns is-multiline is-mobile">
+
+          <!-- PRODUCT -->
+          <div class="column is-half-mobile is-one-third-tablet is-one-fifth-desktop is-one-fifth-fullhd item-product">
+            <div class="card hvr-shadow">
+              <div class="card-image is-clipped is-relative is-overlay block2-labelsale">
+                <figure class="image is-1by1">
+                    <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                </figure>
+                <div class="block2-overlay trans-0-4">
+                  <a href="#" class="hov-pointer trans-0-4 is-size-4 block2-btn-towishlist">
+                    <i class="icon-wishlist fal fa-heart" aria-hidden="true"></i>
+                  </a>
+                  <div class="block2-btn-detail w-size1 trans-0-4">
+                    <a class="get-product" href="">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="content has-text-centered mtb-15">
+                  <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                    <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                  </p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="rating-product" data-rating="4"></span>
+                  </p>
+                </div><!--/content-->
+              </div><!--/card-content-->
+            </div><!--/card-->
+          </div><!--/column-->
+          <!-- PRODUCT -->
+
+        </div><!--/columns container is-multiline-->
+        <!-- ITEM -->
+      </div><!--/container-->
+    </section>
+    <!--/ ACTIVITY -->
+
+    <!--/ LOCATION -->
+    <section class="section has-background-white-ter">
+      <div class="container">
+        <p class="is-size-4 is-size-5-touch has-text-weight-semibold">Location</p>
+        <p class="is-size-6 is-size-7-touch p-b-20">Let’s find our office here</p>
+        <div class="columns is-centered">
+          <div class="column">
+            <div id="map" style="width:100%;height:30rem;"></div>
+          </div>
+        </div>
+      </div><!--/container-->
+    </section>
+    <!--/ LOCATION -->
+
+    <!--/ PAYMENT -->
+    <section class="section">
+      <div class="container">
+        <p class="is-size-4 is-size-5-touch has-text-weight-semibold p-b-20">Payment Methods</p>
+        <div class="columns is-multiline is-mobile">
+          <div class="column">
+            <figure class="image is-96x96">
+              <img src="image/payment-method/onsite.png">
+            </figure>
+          </div><!--/column-->
+        </div><!--/columns-->
+      </div><!--/container-->
+    </section>
+    <!--/ PAYMENT -->
+
+    <!--/FOOTER-->
+    <footer class="footer has-background-grey-darker p-t-24 p-b-24 is-unselectable">
+      <div class="container">
+
+        <div class="content m-l-24 m-r-24 m-t-0">
+          <div class="columns has-text-white m-t-0">
+            
+            <div class="column is-4">
+              <p class="m-b-0">
+                <img class="img-fit w-150" src="image/footer-logo.png" alt="logo zooka">
+              </p>
+              <p class="has-text-grey-lighter"><b>Since 2010 · </b>We are commited to providing dive and watersports in Tanjung, Bali. We focus on the best experience for our customers.</p>
+            </div><!--/column-->
+ 
+            <div class="column is-2">
+              <p class="is-size-4 m-b-0">
+                NEWS
+              </p>
+              <p class="bd-footer-link m-b-0">
+                <a href="#" class="has-text-grey-lighter">
+                  How it works
+                </a>
+              </p>
+              <p class="bd-footer-link">
+                <a href="{{url('/blog')}}" class="has-text-grey-lighter">
+                  Blog
+                </a>
+              </p>
+            </div><!--/column-->
+            
+            <div class="column is-3">
+              <p class="is-size-4 m-b-0">
+                INFORMATION
+              </p>
+              <p class="bd-footer-link m-b-0">
+                <a href="{{url('/#about-us')}}" class="has-text-grey-lighter">
+                  About us
+                </a>
+              </p>
+              <p class="bd-footer-link m-b-0">
+                <a href="#" class="has-text-grey-lighter">
+                  Term and conditions
+                </a>
+              </p>
+              <p class="bd-footer-link">
+                <a href="#" class="has-text-grey-lighter">
+                  Privacy policy
+                </a>
+              </p>
+            </div><!--/column-->
+ 
+          <div class="column is-3">
+            <p class="is-size-4 m-b-0">
+              SUBSCRIBE NOW
+            </p>
+            <p class="bd-footer-link m-b-0">
+              <a href="#" class="has-text-white-ter is-size-7">
+                For more informations, promos and newsletters
+              </a>
+            </p>
+            <div class="field is-grouped">
+              <p class="control is-expanded m-r-5">
+                <input class="input" type="text" placeholder="Your email address">
+              </p>
+              <p class="control">
+                <a class="button zooka-warning">
+                  <span class="icon is-small">
+                    <i class="fas fa-play"></i>
+                  </span>
+                </a>
+              </p>
+            </div><!--/field-->
+            
+            <p class="buttons is-centered">
+              <a class="button">
+                <span class="icon is-small">
+                  <i class="fas fa-phone fa-rotate-90"></i>
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon is-small">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon is-small">
+                  <i class="fab fa-facebook-f"></i>
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon is-small">
+                  <i class="fab fa-instagram"></i>
+                </span>
+              </a>
+            </p><!--/buttons-->
+          </div><!--/column-->
+ 
+          </div><!--/columns-->
+        </div><!--/content-->
+        <hr class="margin-hr">
+        <p class="margin-copyright has-text-centered has-text-white-ter is-size-7">
+          © Copyright 2019 · Zooka Watersports · All rights reserved
+        </p>
+      </div><!--/container-->
+    </footer>
+    <!--/FOOTER-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/seen-notif.js"></script>
+    <script src="js/bulma.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/jquery.star-rating-svg.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF9BOyzOCk8jVFsQ9z1qhxzt3t35z0AR4&callback=initMap" async defer></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = {
+          lat: -8.753199,
+          lng: 115.219950
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: myLatLng,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+        });
+      }
+    </script>
+  </body>
+</html>

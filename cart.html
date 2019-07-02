@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOOKA</title>
+    <!-- header & footer use this css -->
+    <link rel="icon" href="image/web-logo-thumbnails.png">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bulma-badge.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <!-- header & footer use this css -->
+
+    <!-- universal css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- universal css -->
+
+    <style>
+      .size-person{
+        width: 32px;
+        height: 31px;
+      }
+      .size-input-person{
+        width: 45px;
+        height: 31px;
+      }
+      .has-text-alizarin{
+        color: #e74c3c !important;
+      }
+      input[type=checkbox].checkbox-product{
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-two-thirds">
+            <p class="subtitle is-size-5	has-text-weight-semibold">
+              <i class="far fa-shopping-cart"></i>&nbsp; Activities in cart
+            </p>
+            <div class="box is-radiusless p-t-15 p-r-15 p-b-15 p-l-15">
+              <p class="subtitle is-size-6 has-text-weight-semibold lh-1-5"><input class="checkbox-product" type="checkbox">&nbsp; Select all item
+                <span class="is-pulled-right has-text-danger">Delete all</span>
+              </p>
+            </div><!--/box-->
+
+            <!--LIST ITEM-->
+            <article class="message is-radiusless">
+              <div class="message-header is-radiusless">
+                <p><input class="checkbox-product" type="checkbox"> Banana boat</p>
+                <button class="delete" aria-label="delete"></button>
+              </div>
+              <div class="message-body p-t-0 p-l-1 p-r-1 p-b-0">
+                <div class="box is-radiusless is-clipped">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content is-clipped">
+                      <div class="columns">
+                        <div class="column">
+                          <div class="content">
+                            <p class="subtitle fs-15 m-b-0">Booking date: <span class="has-text-weight-semibold">15 Juni 2019</span></p>
+                            <p class="subtitle fs-15 m-b-0">Booking time: <span class="has-text-weight-semibold">14.00 WITA</span></p>
+                            <p class="subtitle fs-15">Price: <span class="has-text-weight-semibold">IDR. 200.000</span></p>
+                          </div><!--/content-->
+                        </div><!--/column-->
+                        <div class="column">
+                          <div class="content">
+                            <p class="subtitle fs-15 m-b-0 has-text-weight-semibold">Person: </p>
+														<div class="is-flex is-clipped m-r-22 m-t-10">
+															<button class="btn-num-product-down color1 flex-c-m size-person bg8 eff2">
+																<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+															</button>
+															<input class="size-input-person fs-14 bo5 is-radiusless has-text-centered num-product" type="text" value="1">
+                              
+															<button class="btn-num-product-up color1 flex-c-m size-person bg8 eff2">
+																<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+															</button>
+                            </div><!--/is-flex-->
+                          </div><!--/content-->
+                        </div><!--/column-->
+                        <div class="column">
+                          <div class="content">
+                            <p class="subtitle fs-15 m-b-0 has-text-weight-semibold">Total: </p>
+                            <p class="subtitle fs-15 has-text-weight-bold has-text-danger">IDR. 200.000</p>
+                          </div><!--/content-->
+                        </div><!--/column-->
+                      </div><!--/columns-->
+                    </div><!--/media-content-->
+                  </article>
+                </div><!--/box-->
+              </div><!--/message-body-->
+            </article>
+            <!--LIST ITEM-->
+
+            <!--LIST ITEM-->
+            <article class="message is-radiusless">
+              <div class="message-header is-radiusless">
+                <p><input class="checkbox-product" type="checkbox"> Parasailling adventure</p>
+                <button class="delete" aria-label="delete"></button>
+              </div>
+              <div class="message-body p-t-0 p-l-1 p-r-1 p-b-0">
+                <div class="box is-radiusless is-clipped">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content is-clipped">
+                      <div class="columns">
+                        <div class="column">
+                          <div class="content">
+                            <p class="subtitle fs-15 m-b-0">Booking date: <span class="has-text-weight-semibold">15 Juni 2019</span></p>
+                            <p class="subtitle fs-15 m-b-0">Booking time: <span class="has-text-weight-semibold">14.00 WITA</span></p>
+                            <p class="subtitle fs-15">Price: <span class="has-text-weight-semibold">IDR. 200.000</span></p>
+                          </div><!--/content-->
+                        </div><!--/column-->
+                        <div class="column">
+                          <div class="content">
+                            <p class="subtitle fs-15 m-b-0 has-text-weight-semibold">Person: </p>
+														<div class="is-flex is-clipped m-r-22 m-t-10">
+															<button class="btn-num-product-down color1 flex-c-m size-person bg8 eff2">
+																<i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+															</button>
+															<input class="size-input-person fs-14 bo5 is-radiusless has-text-centered num-product" type="text" value="1">
+                              
+															<button class="btn-num-product-up color1 flex-c-m size-person bg8 eff2">
+																<i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+															</button>
+                            </div><!--/is-flex-->
+                          </div><!--/content-->
+                        </div><!--/column-->
+                        <div class="column">
+                          <div class="content">
+                            <p class="subtitle fs-15 m-b-0 has-text-weight-semibold">Total: </p>
+                            <p class="subtitle fs-15 has-text-weight-bold has-text-danger">IDR. 200.000</p>
+                          </div><!--/content-->
+                        </div><!--/column-->
+                      </div><!--/columns-->
+                    </div><!--/media-content-->
+                  </article>
+                </div><!--/box-->
+              </div><!--/message-body-->
+            </article>
+            <!--LIST ITEM-->
+
+          </div><!--/column is-two-thirds-->
+          <div class="column">
+            <p class="subtitle is-size-5	has-text-weight-semibold">
+              <i class="far fa-archive"></i>&nbsp; Order summary
+            </p>
+            <div class="box is-radiusless">
+              <p class="subtitle fs-16">Banana boat 
+                <span class="is-pulled-right has-text-danger">IDR. 200.000</span>
+              </p>
+              <p class="subtitle fs-16">Parasailling adventure
+                <span class="is-pulled-right has-text-danger">IDR. 200.000</span>
+              </p>
+              <hr>
+              <p class="subtitle fs-16 has-text-weight-semibold">Total:
+                <span class="is-pulled-right has-text-danger">IDR. 400.000</span>
+              </p>  
+              <button class="button is-dark is-fullwidth is-radiusless">Procced to checkout</button>
+            </div><!--/box-->
+          </div><!--/column-->
+        </div><!--/columns-->
+      </div><!--/container-->
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/seen-notif.js"></script>
+    <script src="js/bulma.js"></script>
+  </body>
+</html>

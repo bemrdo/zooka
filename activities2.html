@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOOKA</title>
+    <!-- header & footer use this css -->
+    <link rel="icon" href="image/web-logo-thumbnails.png">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bulma-badge.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <!-- header & footer use this css -->
+
+    <!-- universal css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- universal css -->
+
+    <!-- welcome use this css -->
+ 
+    <!-- product use this css -->
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/price-range.css">
+    <link rel="stylesheet" href="css/use-product.css">
+    <link rel="stylesheet" href="css/elegant-font/html-css/style.css">
+    <link rel="stylesheet" href="css/star-rating-svg.css">
+    <!-- product use this css -->
+    <style>
+      .column .item-product:first-child { 
+        margin-top: -250px !important;
+      }       
+
+    </style>
+  </head>
+  <body>
+
+    <!--/NAVBAR-->
+    <nav class="navbar is-dark is-fixed-top is-unselectable" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item is-hidden-touch" href="https://bulma.io">
+            <img src="image/zookawatersports.png" alt="logo zooka">
+          </a>
+          <a class="navbar-item is-hidden-desktop" href="#">
+            <img src="image/zooka-thumbnails-light.png" alt="logo zooka">
+          </a>
+ 
+          <div class="navbar-bell burger is-hidden-desktop">
+            <a href="">
+              <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="3">
+                <i class="fas fa-lg fa-bell"></i>
+              </span>
+            </a>
+          </div>
+          <div class="navbar-cart burger is-hidden-desktop">
+            <a href="">
+              <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="4">
+                <i class="fas fa-lg fa-shopping-cart"></i>
+              </span>
+            </a>
+          </div>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="zooka-navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div><!--/navbar-brand-->
+ 
+        <div id="zooka-navbar" class="navbar-menu">
+          <div class="navbar-end p-t-0 p-b-0">
+            <a class="navbar-item" href="">
+              Home
+            </a>
+            <a class="navbar-item" href="">
+              All Activities
+            </a>
+            <a class="navbar-item" href="">
+              Blog
+            </a>
+ 
+            <!--/cart-->
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <span class="has-badge-rounded has-badge-danger" data-badge="3">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </a>
+ 
+              <div class="navbar-dropdown is-right is-boxed w-250">
+                <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top">
+                  Total: 0 Items
+                </div><!--/navbar-dropdown is-right is-boxed-->
+                <hr class="navbar-divider">
+                <div class="dropdown-content navbar-item is-radiusless is-shadowless is-clipped">
+                  <article class="media">
+                    <figure class="media-content">
+                      <p class="image m-l-10 m-t-10 m-r-10 m-b-10">
+                        <img class="img-fit w-full dis-block max-h-240 m-l-r-auto" src="image/zooka-empty.png">
+                      </p>
+                    </figure>
+                  </article>
+                </div><!--/dropdown-content-->
+ 
+              </div><!--/navbar-dropdown-->
+            </div><!--/navbar-item-->
+            <!--/cart-->
+ 
+            <!--/notification-->
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <span class="has-badge-rounded has-badge-danger" data-badge="4">
+                  <i class="fas fa-bell"></i>
+                </span>
+              </a>
+              <div class="navbar-dropdown is-right is-boxed w-365">
+                <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top dis-inline">
+                  <span>Notification</span>
+                  <a class="tandai is-pulled-right">Tandai semua &nbsp;&nbsp;</a>
+                </div>
+                <hr class="navbar-divider">
+                <div class="has-text-centered">
+                  <p class="title has-text-grey-light p-t-20">
+                    <i class="fal fa-bells fa-2x"></i>
+                  </p>
+                  <p class="subtitle has-text-grey-light p-t-10 p-b-20">No Notification</p>
+                </div>
+              </div>
+            </div>
+            <!--/notification-->
+
+            <!--/account-->
+            <div class="navbar-item has-dropdown is-right is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <i class="fas fa-lg fa-user"></i>
+              </a>
+              <div class="navbar-dropdown is-right is-boxed">
+                <a href="#" class="navbar-item">Login</a>
+                <a href="#" class="navbar-item">Register</a>
+              </div><!--/navbar-dropdown-->
+            </div><!--/navbar-item-->
+            <!--/account-->
+
+          </div><!--/navbar-end-->
+        </div><!--/navbar-menu-->
+      </div><!--/container-->  
+    </nav>
+    <!--/NAVBAR-->
+
+    <section class="section is-marginless is-paddingless">
+      <figure class="image is-3by1 m-t-52">
+        <img src="image/header-product.jpg">
+      </figure>
+    </section>
+ 
+    <!-- **** DESKTOP **** -->
+    <section class="section is-hidden-touch">
+      <div class="container">
+
+        <div class="columns">
+          <!--SIDE MENU-->
+          <aside class="menu is-fullheight column is-2 is-narrow-mobile">
+            <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+              Categories
+            </p>
+            <ul class="menu-list">
+              <li><a class="has-text-grey is-capitalized is-activate">all</a></li>
+              <li><a class="has-text-grey is-capitalized">packages</a></li>
+              <li><a class="has-text-grey is-capitalized">underwater</a></li>
+              <li><a class="has-text-grey is-capitalized">watersports</a></li>
+            </ul>
+            <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+              Price Range
+            </p>
+            <ul class="menu-list">
+              <div class="filter-price p-t-0 p-b-50">
+                <div class="is-size-6 p-b-17">
+                  <span class="fs-12">IDR. <span id="value-lower">100000</span> - IDR. <span id="value-upper">500000</span></span>
+                </div>
+
+                <div class="wra-filter-bar">
+                  <div id="filter-bar"></div>
+                </div>
+
+                <div class="buttons is-centered p-t-16">
+                  <span class="button is-fullwidth is-dark is-radiusless fs-13">Filter</span>
+                  <span class="button is-fullwidth is-radiusless fs-13">Reset</span>
+                </div><!--/buttons-->
+
+              </div><!--/filter-price-->
+            </ul>
+          </aside>
+          <!--SIDE MENU-->
+ 
+          <!-- ITEM -->
+          <div class="columns container is-multiline is-mobile">
+
+            <div class="column is-half-mobile is-half-tablet is-one-quarter-desktop is-one-fifth-fullhd is-one-quarter-fullhd item-product">
+              <div class="card hvr-shadow">
+                <div class="card-image is-clipped is-relative is-overlay block2-labelsale">
+                  <figure class="image is-1by1">
+                      <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                  </figure>
+                  <div class="block2-overlay trans-0-4">
+                    <a href="#" class="hov-pointer trans-0-4 is-size-4 block2-btn-towishlist">
+                      <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                      <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                    </a>
+                    <div class="block2-btn-detail w-size1 trans-0-4">
+                      <a class="get-product" href="">Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="content has-text-centered mtb-15">
+                    <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                    <p class="is-size-7 is-marginless">
+                      <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                      <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                    </p>
+                    <p class="is-size-7 is-marginless">
+                      <span class="rating-product" data-rating="4"></span>
+                    </p>
+                  </div><!--/content-->
+                </div><!--/card-content-->
+              </div><!--/card-->
+            </div><!--/column-->
+
+            <div class="column is-half-mobile is-half-tablet is-one-quarter-desktop is-one-fifth-fullhd is-one-quarter-fullhd item-product">
+              <div class="card hvr-shadow">
+                <div class="card-image is-clipped is-relative is-overlay block2-labelsale">
+                  <figure class="image is-1by1">
+                      <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                  </figure>
+                  <div class="block2-overlay trans-0-4">
+                    <a href="#" class="hov-pointer trans-0-4 is-size-4 block2-btn-towishlist">
+                      <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                      <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                    </a>
+                    <div class="block2-btn-detail w-size1 trans-0-4">
+                      <a class="get-product" href="">Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="content has-text-centered mtb-15">
+                    <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                    <p class="is-size-7 is-marginless">
+                      <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                      <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                    </p>
+                    <p class="is-size-7 is-marginless">
+                      <span class="rating-product" data-rating="4"></span>
+                    </p>
+                  </div><!--/content-->
+                </div><!--/card-content-->
+              </div><!--/card-->
+            </div><!--/column-->
+
+            <div class="column is-half-mobile is-half-tablet is-one-quarter-desktop is-one-fifth-fullhd is-one-quarter-fullhd item-product">
+              <div class="card hvr-shadow">
+                <div class="card-image is-clipped is-relative is-overlay block2-labelsale">
+                  <figure class="image is-1by1">
+                      <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                  </figure>
+                  <div class="block2-overlay trans-0-4">
+                    <a href="#" class="hov-pointer trans-0-4 is-size-4 block2-btn-towishlist">
+                      <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                      <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                    </a>
+                    <div class="block2-btn-detail w-size1 trans-0-4">
+                      <a class="get-product" href="">Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="content has-text-centered mtb-15">
+                    <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                    <p class="is-size-7 is-marginless">
+                      <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                      <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                    </p>
+                    <p class="is-size-7 is-marginless">
+                      <span class="rating-product" data-rating="4"></span>
+                    </p>
+                  </div><!--/content-->
+                </div><!--/card-content-->
+              </div><!--/card-->
+            </div><!--/column-->
+
+          </div><!--/columns container is-multiline-->
+          <!-- ITEM -->
+ 
+        </div><!--/columns is-fullheight-->
+ 
+      </div><!--/container-->
+    </section><!--/section-->
+
+    <!-- **** DESKTOP **** -->
+
+
+    <!-- **** TOUCH **** -->
+
+    <!--ASIDE-->
+    <div id="mySidenav" class="sidenav has-background-white is-hidden-desktop">
+      <p class="title is-size-4 p-l-10 m-t-10">Filter</p>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <hr class="dropdown-divider">
+      <aside class="menu is-fullheight column is-2 is-narrow-mobile">
+        <p class="menu-label is-size-6 has-text-weight-bold has-text-grey-darker">
+          Categories
+        </p>
+        <ul class="menu-list">
+          <li><a class="has-text-grey is-capitalized is-size-6">all</a></li>
+          <li><a class="has-text-grey is-capitalized is-size-6">packages</a></li>
+          <li><a class="has-text-grey is-capitalized is-size-6">underwater</a></li>
+          <li><a class="has-text-grey is-capitalized is-size-6">watersports</a></li>
+        </ul>
+        <p class="menu-label is-size-6 has-text-weight-bold has-text-grey-darker">
+          Sort
+        </p>
+        <ul class="menu-list">
+          <div class="control p-l-13">
+            <label class="radio has-text-grey is-size-6">
+              <input type="radio" name="sort" checked>
+              &nbsp;Popularity
+            </label>
+          </div><!--/control-->
+          <div class="control p-l-13">
+            <label class="radio has-text-grey is-size-6">
+              <input type="radio" name="sort">
+              &nbsp;User Rating
+            </label>
+          </div><!--/control-->
+          <div class="control p-l-13">
+            <label class="radio has-text-grey is-size-6">
+              <input type="radio" name="sort">
+              &nbsp;Price: High to Low
+            </label>
+          </div><!--/control-->
+          <div class="control p-l-13">
+            <label class="radio has-text-grey is-size-6">
+              <input type="radio" name="sort">
+              &nbsp;Price: Low to High
+            </label>
+          </div><!--/control-->
+        </ul>
+        <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+          Price Range
+        </p>
+        <ul class="menu-list">
+          <div class="filter-price p-t-0">
+            <div class="is-size-6 p-b-17">
+              <span class="p-l-13 fs-12">IDR. <span id="value-lower">100000</span> - IDR. <span id="value-upper">500000</span></span>
+            </div>
+
+            <div class="p-l-6 wra-filter-bar">
+              <div id="filter-bar-mobile"></div>
+            </div>
+
+            <div class="buttons is-centered p-t-16">
+              <span class="button is-fullwidth is-dark is-radiusless fs-13">Filter</span>
+              <span class="button is-fullwidth is-radiusless fs-13">Reset</span>
+            </div><!--/buttons-->
+
+          </div><!--/filter-price-->
+        </ul>
+      </aside>
+    </div>
+    <!--ASIDE-->
+
+    <section class="section is-hidden-desktop">
+      <div class="container">
+        <div class="columns is-1-mobile is-multiline is-mobile">
+
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-fullhd is-one-quarter-fullhd item-product item-padding">
+            <div class="card hvr-shadow">
+              <div class="card-image is-clipped is-relative is-overlay block2-labelsale">
+                <figure class="image is-1by1">
+                    <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                </figure>
+                <div class="block2-overlay trans-0-4">
+                  <a href="#" class="hov-pointer trans-0-4 is-size-4 block2-btn-towishlist">
+                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                  </a>
+                  <div class="block2-btn-detail w-size1 trans-0-4">
+                    <a class="get-product" href="">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="content has-text-centered mtb-15">
+                  <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                    <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                  </p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="rating-product" data-rating="4"></span>
+                  </p>
+                </div><!--/content-->
+              </div><!--/card-content-->
+            </div><!--/card-->
+          </div><!--/column-->
+
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-fullhd is-one-quarter-fullhd item-product item-padding">
+            <div class="card hvr-shadow">
+              <div class="card-image is-clipped is-relative is-overlay block2-labelsale">
+                <figure class="image is-1by1">
+                    <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                </figure>
+                <div class="block2-overlay trans-0-4">
+                  <a href="#" class="hov-pointer trans-0-4 is-size-4 block2-btn-towishlist">
+                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                  </a>
+                  <div class="block2-btn-detail w-size1 trans-0-4">
+                    <a class="get-product" href="">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="content has-text-centered mtb-15">
+                  <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                    <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                  </p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="rating-product" data-rating="4"></span>
+                  </p>
+                </div><!--/content-->
+              </div><!--/card-content-->
+            </div><!--/card-->
+          </div><!--/column-->
+
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-fullhd is-one-quarter-fullhd item-product item-padding">
+            <div class="card hvr-shadow">
+              <div class="card-image is-clipped is-relative is-overlay block2-labelsale">
+                <figure class="image is-1by1">
+                    <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                </figure>
+                <div class="block2-overlay trans-0-4">
+                  <a href="#" class="hov-pointer trans-0-4 is-size-4 block2-btn-towishlist">
+                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                  </a>
+                  <div class="block2-btn-detail w-size1 trans-0-4">
+                    <a class="get-product" href="">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="content has-text-centered mtb-15">
+                  <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                    <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                  </p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="rating-product" data-rating="4"></span>
+                  </p>
+                </div><!--/content-->
+              </div><!--/card-content-->
+            </div><!--/card-->
+          </div><!--/column-->
+
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-fullhd is-one-quarter-fullhd item-product item-padding">
+            <div class="card hvr-shadow">
+              <div class="card-image is-clipped is-relative is-overlay block2-labelsale">
+                <figure class="image is-1by1">
+                    <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                </figure>
+                <div class="block2-overlay trans-0-4">
+                  <a href="#" class="hov-pointer trans-0-4 is-size-4 block2-btn-towishlist">
+                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                  </a>
+                  <div class="block2-btn-detail w-size1 trans-0-4">
+                    <a class="get-product" href="">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="content has-text-centered mtb-15">
+                  <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                    <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                  </p>
+                  <p class="is-size-7 is-marginless">
+                    <span class="rating-product" data-rating="4"></span>
+                  </p>
+                </div><!--/content-->
+              </div><!--/card-content-->
+            </div><!--/card-->
+          </div><!--/column-->
+
+
+        </div><!--/columns is-multiline is-mobile-->
+
+        <!--MOBILE FILTER-->
+        <div class="floating-container is-hidden-desktop columns is-mobile">
+          <div onclick="openNav()" class="floating-button">
+            <i class="fas fa-filter"></i>
+          </div>
+        </div>
+        <!--MOBILE FILTER-->
+ 
+      </div><!--/container-->
+    </section>
+    <!-- **** TOUCH **** -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/seen-notif.js"></script>
+    <script src="js/bulma.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/jquery.star-rating-svg.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF9BOyzOCk8jVFsQ9z1qhxzt3t35z0AR4&callback=initMap" async defer></script>
+
+  <script type="text/javascript" src="js/nouislider.js"></script>
+	<script type="text/javascript">
+		/*[ No ui ] MOBILE
+	    ===========================================================*/
+	    var filterBar2 = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar2, {
+	        start: [ 100000, 500000 ],
+          step: 10000,
+	        connect: true,
+	        range: {
+	            'min': 0,
+	            'max': 1000000
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar2.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]) ;
+	    });
+	</script>
+	<script type="text/javascript">
+		/*[ No ui ] MOBILE
+	    ===========================================================*/
+	    var filterBar2 = document.getElementById('filter-bar-mobile');
+
+	    noUiSlider.create(filterBar2, {
+	        start: [ 100000, 500000 ],
+          step: 10000,
+	        connect: true,
+	        range: {
+	            'min': 0,
+	            'max': 1000000
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar2.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]) ;
+	    });
+	</script>
+	<script type="text/javascript">
+		/*[ No ui ]
+	    ===========================================================*/
+	    var filterBar = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar, {
+	        start: [ 100000, 500000 ],
+          step: 10000,
+	        connect: true,
+	        range: {
+	            'min': 0,
+	            'max': 1000000
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]) ;
+	    });
+	</script>
+    <script>
+      $(".rating-product").starRating({
+        totalStars: 5,
+        starShape: 'rounded',
+        readOnly: true,
+        starSize: 13,
+        emptyColor: 'lightgray',
+        activeColor: '#CCCC00',
+        useGradient: false
+      });
+    </script>
+
+    <!--/ASIDE MOBILE-->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+   
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <!--/ASIDE MOBILE-->
+
+    <!--DROPDOWN-->
+    <script>
+      var trigger = document.querySelector(".dropdown-trigger");
+
+      trigger.addEventListener("click", function(event) {
+        document.querySelector(".dropdown-content").classList.toggle("is-active");
+      });
+    </script>
+    <!--DROPDOWN-->
+  </body>
+</html>

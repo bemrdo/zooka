@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOOKA</title>
+    <!-- header & footer use this css -->
+    <link rel="icon" href="image/web-logo-thumbnails.png">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bulma-badge.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <!-- header & footer use this css -->
+
+    <!-- universal css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- universal css -->
+
+    <!-- welcome use this css -->
+ 
+    <!-- product use this css -->
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/price-range.css">
+    <link rel="stylesheet" href="css/use-product.css">
+    <link rel="stylesheet" href="css/elegant-font/html-css/style.css">
+    <link rel="stylesheet" href="css/star-rating-svg.css">
+    <!-- product use this css -->
+  </head>
+  <body>
+
+    <!--/NAVBAR-->
+    <nav class="navbar is-dark is-fixed-top is-unselectable" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item is-hidden-touch" href="https://bulma.io">
+            <img src="image/zookawatersports.png" alt="logo zooka">
+          </a>
+          <a class="navbar-item is-hidden-desktop" href="#">
+            <img src="image/zooka-thumbnails-light.png" alt="logo zooka">
+          </a>
+ 
+          <div class="navbar-bell burger is-hidden-desktop">
+            <a href="#">
+              <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="3">
+                <i class="fas fa-lg fa-bell"></i>
+              </span>
+            </a>
+          </div>
+          <div class="navbar-cart burger is-hidden-desktop">
+            <a href="">
+              <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="4">
+                <i class="fas fa-lg fa-shopping-cart"></i>
+              </span>
+            </a>
+          </div>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="zooka-navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div><!--/navbar-brand-->
+ 
+        <div id="zooka-navbar" class="navbar-menu">
+          <div class="navbar-end p-t-0 p-b-0">
+            <a class="navbar-item" href="">
+              Home
+            </a>
+            <a class="navbar-item" href="">
+              All Activities
+            </a>
+            <a class="navbar-item" href="">
+              Blog
+            </a>
+ 
+            <!--/cart-->
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <span class="has-badge-rounded has-badge-danger" data-badge="3">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </a>
+ 
+              <div class="navbar-dropdown is-right is-boxed w-250">
+                <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top">
+                  Total: 0 Items
+                </div><!--/navbar-dropdown is-right is-boxed-->
+                <hr class="navbar-divider">
+                <div class="dropdown-content navbar-item is-radiusless is-shadowless is-clipped">
+                  <article class="media">
+                    <figure class="media-content">
+                      <p class="image m-l-10 m-t-10 m-r-10 m-b-10">
+                        <img class="img-fit w-full dis-block max-h-240 m-l-r-auto" src="image/zooka-empty.png">
+                      </p>
+                    </figure>
+                  </article>
+                </div><!--/dropdown-content-->
+ 
+              </div><!--/navbar-dropdown-->
+            </div><!--/navbar-item-->
+            <!--/cart-->
+ 
+            <!--/notification-->
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <span class="has-badge-rounded has-badge-danger" data-badge="4">
+                  <i class="fas fa-bell"></i>
+                </span>
+              </a>
+              <div class="navbar-dropdown is-right is-boxed w-365">
+                <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top dis-inline">
+                  <span>Notification</span>
+                  <a class="tandai is-pulled-right">Tandai semua &nbsp;&nbsp;</a>
+                </div>
+                <hr class="navbar-divider">
+                <div class="has-text-centered">
+                  <p class="title has-text-grey-light p-t-20">
+                    <i class="fal fa-bells fa-2x"></i>
+                  </p>
+                  <p class="subtitle has-text-grey-light p-t-10 p-b-20">No Notification</p>
+                </div>
+              </div>
+            </div>
+            <!--/notification-->
+
+            <!--/account-->
+            <div class="navbar-item has-dropdown is-right is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <i class="fas fa-lg fa-user"></i>
+              </a>
+              <div class="navbar-dropdown is-right is-boxed">
+                <a href="#" class="navbar-item">Login</a>
+                <a href="#" class="navbar-item">Register</a>
+              </div><!--/navbar-dropdown-->
+            </div><!--/navbar-item-->
+            <!--/account-->
+
+          </div><!--/navbar-end-->
+        </div><!--/navbar-menu-->
+      </div><!--/container-->  
+    </nav>
+    <!--/NAVBAR-->
+
+    <section class="section is-marginless is-paddingless">
+      <figure class="image is-3by1 m-t-52">
+        <img src="image/header-product.jpg">
+      </figure>
+    </section>
+
+    <section class="section has-background-cloud is-paddingless">
+      <div class="hero-body p-t-12 p-b-8">
+        <div class="container">
+          <div class="columns is-centered is-vcentered search-product">
+            <div class="column is-8">
+              <div class="input-wrapper">
+                <input type="text" class="search input is-fullwidth" placeholder="Search..." name="search" id="search" data-list="#mylist"></input>
+              </div>
+              <ul id="mylist"></ul>
+            </div>
+          </div>
+        <div class="search-bottom"></div>
+      </div>
+    </section>
+
+    <!--/MOBILE ASIDE-->
+    <div id="mySidenav" class="sidenav has-background-white is-hidden-desktop">
+      <p class="title is-size-3 p-l-10 m-t-10">Filter</p>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <hr class="dropdown-divider">
+      <aside class="menu is-fullheight column is-2 is-narrow-mobile">
+        <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+          Categories
+        </p>
+        <ul class="menu-list">
+          <li><a class="has-text-grey is-capitalized is-size-5">all</a></li>
+          <li><a class="has-text-grey is-capitalized is-size-5">packages</a></li>
+          <li><a class="has-text-grey is-capitalized is-size-5">underwater</a></li>
+          <li><a class="has-text-grey is-capitalized is-size-5">watersports</a></li>
+        </ul>
+        <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+          Sort
+        </p>
+        <ul class="menu-list">
+          <div class="control p-l-13">
+            <label class="radio has-text-grey is-size-5">
+              <input type="radio" name="sort" checked>
+              &nbsp;Popularity
+            </label>
+          </div><!--/control-->
+          <div class="control p-l-13">
+            <label class="radio has-text-grey is-size-5">
+              <input type="radio" name="sort">
+              &nbsp;User Rating
+            </label>
+          </div><!--/control-->
+          <div class="control p-l-13">
+            <label class="radio has-text-grey is-size-5">
+              <input type="radio" name="sort">
+              &nbsp;Price: High to Low
+            </label>
+          </div><!--/control-->
+          <div class="control p-l-13">
+            <label class="radio has-text-grey is-size-5">
+              <input type="radio" name="sort">
+              &nbsp;Price: Low to High
+            </label>
+          </div><!--/control-->
+        </ul>
+        <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+          Price Range
+        </p>
+        <ul class="menu-list">
+          <div class="mobile-range-slider">
+            <span class="has-text-grey-light">
+              <input class="mobile-input" type="number" value="100000" min="0" max="1000000"/>-<input class="mobile-input" type="number" value="900000" min="0" max="1000000"/>
+            </span>
+            <input value="100000" min="0" max="1000000" step="500" type="range"/>
+            <input value="900000" min="0" max="1000000" step="500" type="range"/>
+          </div>
+        </ul>
+        <p class="menu-label">
+          <button class="button is-dark is-fullwidth m-t-30">Filter</button>
+        </p>
+      </aside>
+    </div>
+    <!--/MOBILE ASIDE-->
+ 
+    <!-- **** DESKTOP **** -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <!--SIDE MENU-->
+          <aside class="menu is-fullheight column is-2 is-narrow-mobile is-hidden-touch">
+            <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+              Categories
+            </p>
+            <ul class="menu-list">
+              <li><a class="has-text-grey is-capitalized">all</a></li>
+              <li><a class="has-text-grey is-capitalized">packages</a></li>
+              <li><a class="has-text-grey is-capitalized">underwater</a></li>
+              <li><a class="has-text-grey is-capitalized">watersports</a></li>
+            </ul>
+            <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+              Sort
+            </p>
+            <ul class="menu-list">
+              <div class="control p-l-11">
+                <label class="radio has-text-grey">
+                  <input type="radio" name="sort" checked>
+                  &nbsp;Popularity
+                </label>
+              </div><!--/control-->
+              <div class="control p-l-11">
+                <label class="radio has-text-grey">
+                  <input type="radio" name="sort">
+                  &nbsp;User Rating
+                </label>
+              </div><!--/control-->
+              <div class="control p-l-11">
+                <label class="radio has-text-grey">
+                  <input type="radio" name="sort">
+                  &nbsp;Price: High to Low
+                </label>
+              </div><!--/control-->
+              <div class="control p-l-11">
+                <label class="radio has-text-grey">
+                  <input type="radio" name="sort">
+                  &nbsp;Price: Low to High
+                </label>
+              </div><!--/control-->
+            </ul>
+            <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+              Price Range
+            </p>
+            <ul class="menu-list">
+              <div class="range-slider">
+                <span class="has-text-grey-light">
+                  <input type="number" value="0" min="0" max="1000000"/>-<input type="number" value="900000" min="0" max="1000000"/>
+                </span>
+                <input value="0" min="0" max="1000000" step="500" type="range"/>
+                <input value="900000" min="0" max="1000000" step="500" type="range"/>
+              </div>
+            </ul>
+          </aside>
+          <!--SIDE MENU-->
+ 
+          <!-- ITEM -->
+          <div class="columns container is-multiline is-mobile">
+            <div class="column is-half-mobile is-one-quarter-desktop is-one-fifth-fullhd">
+              <div class="card hvr-shadow">
+                <div class="card-image is-clipped is-relative is-overlay">
+                  <figure class="image is-1by1">
+                      <img class="img-fit" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                  </figure>
+                  <div class="block2-overlay trans-0-4">
+                    <a href="#" class="hov-pointer trans-0-4 is-size-4 block2-btn-towishlist">
+                      <i class="icon-wishlist fal fa-heart" aria-hidden="true"></i>
+                    </a>
+                    <div class="block2-btn-detail w-size1 trans-0-4">
+                      <a class="get-product" href="">Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="content has-text-centered mtb-15">
+                    <a href="#">
+                      <p class="title is-size-6 is-size-7-touch has-text-centered is-marginless has-text-good-night">Banana Boat</p>
+                      <p class="is-size-7 is-marginless">
+                        <span class="has-text-eye-of-newt has-text-line-through"> IDR. 700.000 </span><br>
+                        <span class="has-text-danger has-text-weight-bold"> IDR. 100.000</span>
+                      </p>
+                      <p class="is-size-7 is-marginless">
+                        <span class="rating-product" data-rating="4"></span>
+                      </p>
+                    </a>
+                  </div><!--/content-->
+                </div><!--/card-content-->
+              </div><!--/card-->
+            </div><!--/column-->
+          </div><!--/columns container is-multiline-->
+          <!-- ITEM -->
+ 
+        </div><!--/columns is-fullheight-->
+ 
+        <!--MOBILE FILTER-->
+        <div class="floating-container is-hidden-desktop columns is-mobile">
+          <div onclick="openNav()" class="floating-button">
+            <i class="fas fa-filter"></i>
+          </div>
+        </div>
+        <!--MOBILE FILTER-->
+ 
+      </div><!--/container-->
+    </section><!--/section-->
+    <!-- **** DESKTOP **** -->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/seen-notif.js"></script>
+    <script src="js/bulma.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/jquery.star-rating-svg.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF9BOyzOCk8jVFsQ9z1qhxzt3t35z0AR4&callback=initMap" async defer></script>
+
+    <script>
+      $(".rating-product").starRating({
+        totalStars: 5,
+        starShape: 'rounded',
+        readOnly: true,
+        starSize: 13,
+        emptyColor: 'lightgray',
+        activeColor: '#CCCC00',
+        useGradient: false
+      });
+    </script>
+
+    <!--/ASIDE MOBILE-->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+   
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <!--/ASIDE MOBILE-->
+
+    <!--/RANGE SLIDER-->
+    <script>
+    (function() {
+ 
+      var parent = document.querySelector(".mobile-range-slider");
+      if(!parent) return;
+ 
+      var
+        rangeS = parent.querySelectorAll("input[type=range]"),
+        numberS = parent.querySelectorAll("input[type=number]");
+ 
+      rangeS.forEach(function(el) {
+        el.oninput = function() {
+          var slide1 = parseFloat(rangeS[0].value),
+                slide2 = parseFloat(rangeS[1].value);
+ 
+          if (slide1 > slide2) {
+                    [slide1, slide2] = [slide2, slide1];
+            // var tmp = slide2;
+            // slide2 = slide1;
+            // slide1 = tmp;
+          }
+ 
+          numberS[0].value = slide1;
+          numberS[1].value = slide2;
+        }
+      });
+ 
+      numberS.forEach(function(el) {
+        el.oninput = function() {
+                var number1 = parseFloat(numberS[0].value),
+                        number2 = parseFloat(numberS[1].value);
+ 
+          if (number1 > number2) {
+            var tmp = number1;
+            numberS[0].value = number2;
+            numberS[1].value = tmp;
+          }
+ 
+          rangeS[0].value = number1;
+          rangeS[1].value = number2;
+ 
+        }
+      });
+ 
+    })();
+    </script>
+    <script>
+    (function() {
+ 
+      var parent = document.querySelector(".range-slider");
+      if(!parent) return;
+ 
+      var
+        rangeS = parent.querySelectorAll("input[type=range]"),
+        numberS = parent.querySelectorAll("input[type=number]");
+ 
+      rangeS.forEach(function(el) {
+        el.oninput = function() {
+          var slide1 = parseFloat(rangeS[0].value),
+                slide2 = parseFloat(rangeS[1].value);
+ 
+          if (slide1 > slide2) {
+                    [slide1, slide2] = [slide2, slide1];
+            // var tmp = slide2;
+            // slide2 = slide1;
+            // slide1 = tmp;
+          }
+ 
+          numberS[0].value = slide1;
+          numberS[1].value = slide2;
+        }
+      });
+ 
+      numberS.forEach(function(el) {
+        el.oninput = function() {
+                var number1 = parseFloat(numberS[0].value),
+                        number2 = parseFloat(numberS[1].value);
+ 
+          if (number1 > number2) {
+            var tmp = number1;
+            numberS[0].value = number2;
+            numberS[1].value = tmp;
+          }
+ 
+          rangeS[0].value = number1;
+          rangeS[1].value = number2;
+ 
+        }
+      });
+ 
+    })();
+    </script>
+    <!--/RANGE SLIDER-->
+
+  </body>
+</html>

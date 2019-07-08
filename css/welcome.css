@@ -1,129 +1,80 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-.avatar-padding {
-    padding: 8%;
+.column .item-product:first-child { 
+  margin-top: -250px !important;
+} 
+.has-background-transparent {
+  background: transparent !important;
+}
+.is-zooka-orange {
+  background-color: #E67E22;
+  border-color: transparent;
+  color: #fff;
+}
+.is-zooka-tag{
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+}
+.is-zooka-tag:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(230,126,34,0.55);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(230,126,34,0.55);
+  box-shadow: 0px 0px 6px 0px rgba(230,126,34,0.55);
+}
+.has-text-zooka-orange {
+  color: #e67e22;
 }
 .explore{
   align-items: center;
 }
-.is-left-paddingless{
-  padding-left: 0 !important;
+.border-benefit{
+  border: .08em solid #fff;
+  border-radius: 50%;
+  padding: .2em .25em .15em;
 }
-input#search.search {
-  font-size: 1.5rem !important;
-  width: 100%;
-  padding: .5rem !important;
-  padding-left: 3rem !important;
-}
-.fa-search {
-  font-size: 1.5rem;
-  margin-left: 1%;
-}
-.search-home input[type=text]{
-  border: 0px solid white;
-  background-color: white;
-  outline: none;
-  width: 100%;
-  background-color: white;
-  padding: 1.2%;
-  margin-top: 4%;
-}
-.input-wrapper {
-  position: relative;
-  width: 100%;
-}
-.input-wrapper:before, .input-wrapper:after {
-  content: "\f002";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 900;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  font-size: 1.4rem !important;
-  position: absolute;
-  top: 41px;
-  left: 0.9rem;
-}
-.category-text {
-  padding-right: 5%;
-}
-body{
-  font-family: 'Lato', sans-serif;
-}
-.bgimg-1, .image-welcome, .bgimg-3, .bgimg-4, .bgimg-5 {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-.bgimg-1 {
-  background-image: url("../image/home-background.jpg");
-  background-size: 100% 100%;
-  min-height: 200px;
-}
-.hero-image {
-  background-image: url("../image/welcome-image.jpg");
-  background-size: cover;
-  align:middle;
-}
-.caption, .caption-header {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-.chooseus{
-  position: absolute;
-  left: 0;
-  top: 9%;
-  width: 100%;
-  text-align: center;
-}
-.caption-header-logo {
-  position: relative;
-  text-shadow: 2px 2px 2px #000;
-}
-.middle-caption-header {
-  margin-top: 120px;
-}
-.caption-a {
-  position: absolute;
-  left: 0;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  text-shadow: 2px 2px 2px #000;
-}
-.caption-b {
-  position: absolute;
-  left: 0;
-  top: 45%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-.caption-opening {
-  position: absolute;
-  left: 0;
-  top: 15%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-.caption span.border, .caption-a span.border, .caption-b span.border, .caption-opening span.border, .caption-header span.border, .caption-header-logo span.border{
+.button.is-register-zooka.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
   color: #fff;
-  font-size: 25px;
-  font-weight:100px;
 }
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+.button.is-primary.is-resgister-zooka.is-inverted.is-outlined:focus, .button.is-primary.is-resgister-zooka.is-inverted.is-outlined:hover {
+  background-color: transparent;
+  border-color: #e67e22;
+  color: #e67e22;
+}
+@media screen and (min-width: 1024px) {
+  .content{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .first-benefit{
+    padding-left: 0px !important;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .input-home{
+    width: 380px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .input-home{
+    width: 360px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .image img.custom-img{
+    height: 322px !important;
+  }
+}
+@media screen and (min-width: 1472px) {
+  .custom-img{
+    height: 444px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .input-home{
+    width: 550px;
+  }
 }

@@ -42,25 +42,9 @@
   border-color: #e67e22;
   color: #e67e22;
 }
-@media screen and (min-width: 1024px) {
-  .content{
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-  }
-}
 @media screen and (min-width: 1088px) {
   .first-benefit{
     padding-left: 0px !important;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .input-home{
-    width: 380px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .input-home{
-    width: 360px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -71,10 +55,5 @@
 @media screen and (min-width: 1472px) {
   .custom-img{
     height: 444px !important;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .input-home{
-    width: 550px;
   }
 }

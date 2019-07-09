@@ -61,6 +61,32 @@ body {
     position: absolute;
 }
 
+.button.is-register-zooka.is-inverted.is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+.button.is-primary.is-resgister-zooka.is-inverted.is-outlined:focus, .button.is-primary.is-resgister-zooka.is-inverted.is-outlined:hover {
+  background-color: transparent;
+  border-color: #e67e22;
+  color: #e67e22;
+}
+
+@media screen and (min-width: 1280px) {
+  .input-home{
+    width: 380px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .input-home{
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .input-home{
+    width: 550px;
+  }
+}
 /*
  * HEADER *
  */
@@ -69,6 +95,13 @@ body {
 /*
  * FOOTER *
  */
+
+@media screen and (min-width: 1024px) {
+  .content{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
 
 .footer {
     padding-bottom: 1rem;

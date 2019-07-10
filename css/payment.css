@@ -1,0 +1,11 @@
+      .size-person{
+        width: 32px;
+        height: 31px;
+      }
+      .size-input-person{
+        width: 45px;
+        height: 31px;
+      }
+      .has-text-alizarin{
+        color: #e74c3c !important;
+      }

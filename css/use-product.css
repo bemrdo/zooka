@@ -62,6 +62,25 @@
 }
 /** MOBILE **/
 
+.block2-loved::before 
+{
+  z-index: 100;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 25px;
+  border-bottom-right-radius: 20px 20px;
+  position: absolute;
+  top: 12px;
+  right: 0px;
+}
+
 .block2-labelsale::before,
 .block2-labelnew::before 
 {

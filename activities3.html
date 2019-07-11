@@ -23,10 +23,46 @@
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/price-range.css">
     <link rel="stylesheet" href="css/use-product.css">
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/checkbox-extension.min.css?alt=media&token=cc705b1c-4cca-4124-a1c0-9b6df214d6e6">
     <link rel="stylesheet" href="css/elegant-font/html-css/style.css">
     <link rel="stylesheet" href="css/star-rating-svg.css">
     <!-- product use this css -->
     <style>
+      .price-range{
+        text-align: right;
+      }
+      .price-range::placeholder{
+        color: #ddd;
+        text-align: right;
+      }
+      .field.is-checkradio.is-white{
+        background-color: black;
+      }
+      .is-checkradio[type=checkbox].is-white:checked+label::before, 
+      .is-checkradio[type=checkbox].is-white:checked+label:before{ 
+        border: .1rem solid #f5f5f5;
+        background-color: #f5f5f5;
+      }
+      .is-checkradio[type=checkbox].is-white:checked+label::after, 
+      .is-checkradio[type=checkbox].is-white:checked+label:after {
+        border-color: #e67e22 !important;
+      }
+      .is-checkradio[type=checkbox].is-white+label::before, 
+      .is-checkradio[type=checkbox].is-white+label:before {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        content: '';
+        border: .1rem solid #f5f5f5;
+        background-color: #f5f5f5;
+      }
+      .is-checkradio[type=checkbox].is-white:checked+label::before, .is-checkradio[type=checkbox].is-white:checked+label:before {
+        border: .1rem solid #e67e22;
+        background-color: #f5f5f5;
+      }
+      .is-checkradio[type=checkbox].is-white:checked+label::before:hover, .is-checkradio[type=checkbox].is-white:checked+label:before:hover {
+        border: .1rem solid #d35400;
+      }
       .column .item-product:first-child { 
         margin-top: -250px !important;
       }       
@@ -165,7 +201,7 @@
         <div class="columns">
           <div class="column">
             <span class="is-size-7-mobile">Search result "<strong class="has-text-eye-of-newt"> underwater </strong>"</span>
-            <div class="dropdown is-active is-right is-pulled-right">
+            <div class="dropdown is-right is-pulled-right">
               <div class="dropdown-trigger">
                 <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
                   <span>Simillar</span>
@@ -184,7 +220,7 @@
                 </div>
               </div><!--/dropdown-menu-->
             </div><!--/dropdown-->
-            <span class="is-pulled-right p-r-10 is-size-7-mobile sort-text">Sort</span>
+            <span class="is-pulled-right p-r-10 is-size-7-mobile sort-text">Sort by</span>
             <hr class="m-t-20 m-b-0">
           </div><!--/column-->
         </div><!--/columns-->
@@ -201,7 +237,7 @@
     <hr class="m-t-20 m-b-0" style="background-color: #ddd;">
  
     <!-- **** DESKTOP **** -->
-    <section class="section is-hidden-touch has-background-white-ter">
+    <section class="section is-hidden-touch">
       <div class="container">
 
         <div class="columns">
@@ -215,26 +251,59 @@
               <li><a class="has-text-grey is-capitalized">packages</a></li>
               <li><a class="has-text-grey is-capitalized">underwater</a></li>
               <li><a class="has-text-grey is-capitalized">watersports</a></li>
+              <hr class="has-background-grey m-t-10 m-b-0">
             </ul>
             <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
               Price Range
             </p>
             <ul class="menu-list">
-              <div class="filter-price p-t-0 p-b-50">
-                <div class="is-size-6 p-b-17">
-                  <span class="fs-12">IDR. <span id="value-lower">100000</span> - IDR. <span id="value-upper">500000</span></span>
-                </div>
-
-                <div class="wra-filter-bar">
-                  <div id="filter-bar"></div>
-                </div>
-
-                <div class="buttons is-centered p-t-16">
-                  <span class="button is-fullwidth is-dark is-radiusless fs-13">Filter</span>
-                  <span class="button is-fullwidth is-radiusless fs-13">Reset</span>
-                </div><!--/buttons-->
-
-              </div><!--/filter-price-->
+              <div class="field m-b-5">
+                <p class="control has-icons-left">
+                  <input class="input is-small is-radiusless price-range" type="number" placeholder="Minimum">
+                  <span class="icon is-small is-left">IDR</span>
+                </p>
+              </div><!--/field-->
+              <div class="field">
+                <p class="control has-icons-left">
+                  <input class="input is-small is-radiusless price-range" type="number" placeholder="Maximum">
+                  <span class="icon is-small is-left">IDR</span>
+                </p>
+              </div><!--/field-->
+              <hr class="has-background-grey m-t-20 m-b-0">
+            </ul>
+            <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+              Rating 
+            </p>
+            <ul class="menu-list">
+              <div class="field m-b-0">
+                <input class="is-checkradio is-small is-white" id="exampleCheckboxWhite1" type="checkbox">
+                <label for="exampleCheckboxWhite1"><i class="fas fa-star has-text-warning"></i> 4 higher</label>
+              </div>
+              <hr class="has-background-grey m-t-20 m-b-0">
+            </ul> 
+            <p class="menu-label is-size-6 has-text-weight-semibold has-text-grey-darker">
+              Offer 
+            </p>
+            <ul class="menu-list">
+              <div class="field m-b-0">
+                <input class="is-checkradio is-small is-white" id="exampleCheckboxWhite2" type="checkbox">
+                <label class="has-text-grey is-capitalized" for="exampleCheckboxWhite2">Discount</label>
+              </div>
+              <div class="field m-b-0">
+                <input class="is-checkradio is-small is-white" id="exampleCheckboxWhite3" type="checkbox">
+                <label class="has-text-grey is-capitalized" for="exampleCheckboxWhite3">Free Transport</label>
+              </div>
+              <div class="field m-b-0">
+                <input class="is-checkradio is-small is-white" id="exampleCheckboxWhite4" type="checkbox">
+                <label class="has-text-grey is-capitalized" for="exampleCheckboxWhite4">Onsite Payment</label>
+              </div>
+              <hr class="has-background-grey m-t-20 m-b-0">
+            </ul> 
+            <ul class="menu-list">
+              <div class="buttons is-centered p-t-16">
+                <span class="button is-fullwidth is-dark is-radiusless fs-13">Filter</span>
+                <span class="button is-fullwidth is-radiusless fs-13">Reset</span>
+              </div><!--/buttons-->
             </ul>
           </aside>
           <!--SIDE MENU-->
@@ -526,7 +595,7 @@
     </section>
     <!-- **** TOUCH **** -->
 
-    <section class="section has-background-white-ter">
+    <section class="section">
       <div class="container">
         <div class="columns is-mobile">
           <div class="column is-half is-offset-one-quarter">
@@ -653,7 +722,7 @@
       var trigger = document.querySelector(".dropdown-trigger");
 
       trigger.addEventListener("click", function(event) {
-        document.querySelector(".dropdown-content").classList.toggle("is-active");
+        document.querySelector(".dropdown").classList.toggle("is-active");
       });
     </script>
     <!--DROPDOWN-->

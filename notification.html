@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOOKA</title>
+    <!-- header & footer use this css -->
+    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/images%2Fweb-logo-thumbnails.png?alt=media&token=a9ab7de1-79d8-4a27-8392-b4d0a478cf1c">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/bulma-badge.min.css?alt=media&token=94274fc7-a6a8-4b6d-be2a-55ab03e08fb5">
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/bulma-extension.min.css?alt=media&token=4df7044b-552e-423e-9f10-c6bd5ce0df69"> 
+    <link rel="stylesheet" href="css/divider-extension.min.css">
+    <link rel="stylesheet" 
+    href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/style.min.css?alt=media&token=da558328-2ae7-41ab-927f-0030bc066099">
+    <!--/style.min-->
+    <link rel="stylesheet" 
+    href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/layouts.css?alt=media&token=7447175d-3de6-4b12-aec3-a9a8a0a4094c">
+    <!--/layouts-->
+    <!-- header & footer use this css -->
+
+    <!-- universal css -->
+    <link rel="stylesheet"
+    href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/utility.css?alt=media&token=0c57b913-b88f-43f4-a171-fb2d1d924a52">
+    <!-- universal css -->
+
+  </head>
+  <body>
+
+    <!--/NAVBAR-->
+    <nav class="navbar is-dark is-fixed-top is-unselectable" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item is-hidden-touch" href="https://bulma.io">
+            <img src="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/images%2Fzookawatersports.png?alt=media&token=0e8decc2-10ed-4fec-9e90-ca5c7e0663a0" alt="logo zooka">
+          </a>
+          <a class="navbar-item is-hidden-desktop" href="#">
+            <img src="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/images%2Fzooka-thumbnails-light.png?alt=media&token=d7900f7b-8de1-4f97-9703-38cf119a6c09" alt="logo zooka">
+          </a>
+ 
+          <div class="navbar-bell burger is-hidden-desktop">
+            <a href="">
+              <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="3">
+                <i class="fas fa-lg fa-bell"></i>
+              </span>
+            </a>
+          </div>
+          <div class="navbar-cart burger is-hidden-desktop">
+            <a href="">
+              <span class="has-badge-rounded has-badge-danger has-text-white" data-badge="4">
+                <i class="fas fa-lg fa-shopping-cart"></i>
+              </span>
+            </a>
+          </div>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="zooka-navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div><!--/navbar-brand-->
+ 
+        <div id="zooka-navbar" class="navbar-menu">
+          <div class="navbar-end p-t-0 p-b-0">
+
+            <div class="navbar-item">
+              <div class="control has-icons-left">
+                <input class="input input-home" type="text" placeholder="Search...">
+                <span class="icon is-small is-left">
+                  <i class="far fa-search"></i>
+                </span>
+              </div><!--/control-->
+            </div><!--/navbar-item-->
+            
+            <a class="navbar-item" href="">
+              Home
+            </a>
+            <a class="navbar-item" href="">
+              All Activities
+            </a>
+            <a class="navbar-item" href="">
+              Blog
+            </a>
+            <div class="is-divider-vertical has-text-grey p-l-10 p-r-10"></div>
+            <!--/cart-->
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <span class="has-badge-rounded has-badge-danger" data-badge="3">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+              </a>
+ 
+              <div class="navbar-dropdown is-right is-boxed w-250">
+                <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top">
+                  Total: 0 Items
+                </div><!--/navbar-dropdown is-right is-boxed-->
+                <hr class="navbar-divider">
+                <div class="dropdown-content navbar-item is-radiusless is-shadowless is-clipped">
+                  <article class="media">
+                    <figure class="media-content">
+                      <p class="image m-l-10 m-t-10 m-r-10 m-b-10">
+                        <img class="img-fit w-full dis-block max-h-240 m-l-r-auto" src="image/zooka-empty.png">
+                      </p>
+                    </figure>
+                  </article>
+                </div><!--/dropdown-content-->
+ 
+              </div><!--/navbar-dropdown-->
+            </div><!--/navbar-item-->
+            <!--/cart-->
+ 
+            <!--/notification-->
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+              <a class="navbar-link is-arrowless" href="#">
+                <span class="has-badge-rounded has-badge-danger" data-badge="4">
+                  <i class="fas fa-bell"></i>
+                </span>
+              </a>
+              <div class="navbar-dropdown is-right is-boxed w-365">
+                <div class="dropdown-content navbar-item has-text-weight-semibold is-shadowless is-radiusless is-marginless is-fixed-top dis-inline">
+                  <span>Notification</span>
+                  <a class="tandai is-pulled-right">Tandai semua &nbsp;&nbsp;</a>
+                </div>
+                <hr class="navbar-divider">
+                <div class="has-text-centered">
+                  <p class="title has-text-grey-light p-t-20">
+                    <i class="fal fa-bells fa-2x"></i>
+                  </p>
+                  <p class="subtitle has-text-grey-light p-t-10 p-b-20">No Notification</p>
+                </div>
+              </div>
+            </div>
+            <!--/notification-->
+
+            <a class="navbar-item" href="">
+              Login 
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="">
+              Register 
+            </a>
+
+            <!--/ Register -->
+            <div class="navbar-item is-hidden-touch">
+              <a class="button is-small is-primary is-resgister-zooka is-inverted is-outlined">
+                Register
+              </a>
+            </div><!--/navbar-item-->
+            <!--/ Register -->
+
+          </div><!--/navbar-end-->
+        </div><!--/navbar-menu-->
+      </div><!--/container-->  
+    </nav>
+    <!--/NAVBAR-->
+
+    <section class="section m-t-50">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <div class="box is-radiusless m-b-0">
+              <span class="has-text-weight-semibold">Notification</span>
+
+              <div class="dropdown is-right is-pulled-right">
+                <div class="dropdown-trigger">
+                  <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span>All</span>
+                    <span class="icon is-small">
+                      <i class="fal fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div><!--/dropdown-trigger-->
+                <div class="dropdown-menu is-radiusless" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <a class="dropdown-item">Most expensive</a>
+                    <a href="#" class="dropdown-item is-active">Pending</a>
+                    <a href="#" class="dropdown-item">Cancled</a>
+                    <a href="#" class="dropdown-item">Not review</a>
+                  </div>
+                </div><!--/dropdown-menu-->
+              </div><!--/dropdown-->
+              <span class="is-pulled-right p-r-10 is-size-7-mobile sort-text">Filter</span>
+
+              <span class="has-text-weight-semibold has-text-grey-darker is-pulled-right p-r-25">Mark all as read</span>
+            </div><!--/box-->
+
+            <div class="box is-radiusless is-marginless is-paddingless">
+              <div class="notification is-warning is-radiusless">
+                <p class="has-text-weight-semibold"># Pesanan kamu dibatalkan</p>
+                <p class="has-text-weight-light">Pasti udah gak sabar kan nunggu barangnya diantar ? No. Tagihan : ZW-5CCFC5AE29CB3INV</p>
+                <small class="has-text-grey">03 June 2019 02:32 WITA</small>
+              </div><!--/notification is-warning-->
+            </div><!--/box--> 
+
+            <div class="box is-radiusless is-marginless is-paddingless">
+              <div class="notification has-background-white-ter is-radiusless">
+                <p class="has-text-weight-semibold"># Pesanan kamu dibatalkan</p>
+                <p class="has-text-weight-light">Pasti udah gak sabar kan nunggu barangnya diantar ? No. Tagihan : ZW-5CCFC5AE29CB3INV</p>
+                <small class="has-text-grey">03 June 2019 02:32 WITA</small>
+              </div><!--/notification is-warning-->
+            </div><!--/box--> 
+
+            <a class="button is-fullwidth is-radiusless m-t-20">Show more</a>
+
+          </div><!--/column-->
+        </div><!--/columns-->
+      </div><!--/container-->
+    </section>
+
+    <script src="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/js%2Fjquery.min.js?alt=media&token=9f0f394e-b2cc-4385-a015-a335cc63b803"></script>
+    <script src="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/js%2Fbulma.js?alt=media&token=eae89f28-ddb8-42c6-802b-eca5ed236020"></script>
+
+    <!--DROPDOWN-->
+    <script>
+      var trigger = document.querySelector(".dropdown-trigger");
+
+      trigger.addEventListener("click", function(event) {
+        document.querySelector(".dropdown").classList.toggle("is-active");
+      });
+    </script>
+    <!--DROPDOWN-->
+  </body>
+</html>

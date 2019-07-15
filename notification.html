@@ -23,6 +23,16 @@
     href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/utility.css?alt=media&token=0c57b913-b88f-43f4-a171-fb2d1d924a52">
     <!-- universal css -->
 
+    <style>
+      @media screen and (min-width: 768px) {
+        .filter{
+          min-width: 12rem;
+        }
+        .button .icon:last-child:not(:first-child) {
+          margin-left: 123px;
+        }
+      }
+    </style>
   </head>
   <body>
 
@@ -161,8 +171,8 @@
 
               <div class="dropdown is-right is-pulled-right">
                 <div class="dropdown-trigger">
-                  <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
-                    <span>All</span>
+                  <button class="button is-small filter" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="">Filter</span>
                     <span class="icon is-small">
                       <i class="fal fa-angle-down" aria-hidden="true"></i>
                     </span>
@@ -170,6 +180,7 @@
                 </div><!--/dropdown-trigger-->
                 <div class="dropdown-menu is-radiusless" id="dropdown-menu" role="menu">
                   <div class="dropdown-content">
+                    <a class="dropdown-item">All</a>
                     <a class="dropdown-item">Most expensive</a>
                     <a href="#" class="dropdown-item is-active">Pending</a>
                     <a href="#" class="dropdown-item">Cancled</a>
@@ -177,24 +188,22 @@
                   </div>
                 </div><!--/dropdown-menu-->
               </div><!--/dropdown-->
-              <span class="is-pulled-right p-r-10 is-size-7-mobile sort-text">Filter</span>
-
-              <span class="has-text-weight-semibold has-text-grey-darker is-pulled-right p-r-25">Mark all as read</span>
+              <span class="has-text-weight-semibold fs-14 has-text-link is-pulled-right p-r-10 p-t-3">Mark all as read</span>
             </div><!--/box-->
 
             <div class="box is-radiusless is-marginless is-paddingless">
               <div class="notification is-warning is-radiusless">
-                <p class="has-text-weight-semibold"># Pesanan kamu dibatalkan</p>
-                <p class="has-text-weight-light">Pasti udah gak sabar kan nunggu barangnya diantar ? No. Tagihan : ZW-5CCFC5AE29CB3INV</p>
-                <small class="has-text-grey">03 June 2019 02:32 WITA</small>
+                <p class="has-text-weight-semibold fs-14"># Pesanan kamu dibatalkan</p>
+                <p class="has-text-weight-light fs-14">Pasti udah gak sabar kan nunggu barangnya diantar ? No. Tagihan : ZW-5CCFC5AE29CB3INV</p>
+                <small class="has-text-grey fs-12">03 June 2019 02:32 WITA</small>
               </div><!--/notification is-warning-->
             </div><!--/box--> 
 
             <div class="box is-radiusless is-marginless is-paddingless">
               <div class="notification has-background-white-ter is-radiusless">
-                <p class="has-text-weight-semibold"># Pesanan kamu dibatalkan</p>
-                <p class="has-text-weight-light">Pasti udah gak sabar kan nunggu barangnya diantar ? No. Tagihan : ZW-5CCFC5AE29CB3INV</p>
-                <small class="has-text-grey">03 June 2019 02:32 WITA</small>
+                <p class="has-text-weight-semibold fs-14"># Pesanan kamu dibatalkan</p>
+                <p class="has-text-weight-light fs-14">Pasti udah gak sabar kan nunggu barangnya diantar ? No. Tagihan : ZW-5CCFC5AE29CB3INV</p>
+                <small class="has-text-grey fs-12">03 June 2019 02:32 WITA</small>
               </div><!--/notification is-warning-->
             </div><!--/box--> 
 

@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../css/fontawesome/css/all.css">
   <!-- CSS Files -->
   <link href="./assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
-  <!-- universal css -->
   <link href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/utility.css?alt=media&token=0c57b913-b88f-43f4-a171-fb2d1d924a52" rel="stylesheet" />
 </head>
 
@@ -142,7 +141,7 @@
             </a>
           </li>
           <li class="nav-item  class=" active" ">
-            <a class="nav-link" href="booked.html">
+            <a class="nav-link active" href="booked.html">
               <i class="far fa-calendar-plus text-default"></i> Booked 
             </a>
           </li>
@@ -175,7 +174,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active " href="manage-item.html">
+            <a class="nav-link " href="manage-item.html">
               <i class="far fa-edit"></i> Manage Item
             </a>
           </li>
@@ -189,95 +188,127 @@
     </div>
   </nav>
 
-  <div class="main-content">
-    <!-- Navbar -->
-    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
-      <div class="container-fluid">
-        <!-- Brand -->
-        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./booked.html">MANAGE ITEMS</a>
-        <!-- Form -->
-        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
-          <div class="form-group mb-0">
-            <div class="input-group input-group-alternative">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-search"></i></span>
-              </div>
-              <input class="form-control" placeholder="Search" type="text">
-            </div>
-          </div>
-        </form>
-        <!-- User -->
-        <ul class="navbar-nav align-items-center d-none d-md-flex">
-          <li class="nav-item dropdown">
-            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="media align-items-center">
-                <span class="avatar avatar-sm rounded-circle">
-                  <img alt="Image placeholder" src="./assets/img/theme/team-4-800x800.jpg">
-                </span>
-                <div class="media-body ml-2 d-none d-lg-block">
-                  <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
-                </div>
-              </div>
-            </a>
-            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-              <div class=" dropdown-header noti-title">
-                <h6 class="text-overflow m-0">Welcome!</h6>
-              </div>
-              <a href="./examples/profile.html" class="dropdown-item">
-                <i class="ni ni-single-02"></i>
-                <span>My profile</span>
-              </a>
-              <a href="./examples/profile.html" class="dropdown-item">
-                <i class="ni ni-settings-gear-65"></i>
-                <span>Settings</span>
-              </a>
-              <a href="./examples/profile.html" class="dropdown-item">
-                <i class="ni ni-calendar-grid-58"></i>
-                <span>Activity</span>
-              </a>
-              <a href="./examples/profile.html" class="dropdown-item">
-                <i class="ni ni-support-16"></i>
-                <span>Support</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#!" class="dropdown-item">
-                <i class="ni ni-user-run"></i>
-                <span>Logout</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- End Navbar -->
-    <!-- Header -->
-    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
-      <div class="container-fluid">
-        <div class="header-body">
+  <div class="main-content m-t-30 m-b-30">
+    <div class="container-fluid">
 
-          <!-- ITEM -->
-          <div class="row">
-            <div class="col-xl-3 col-lg-6 m-b-20">
-              <div class="card">
-                <img class="card-img-top" src="assets/img/theme/team-1-800x800.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <a href="#"><h4 class="card-title mt--3">Banana Boat</h4></a>
-                  <p class="card-text fs-12 mt--3">IDR. 120.000</p>
-                  <center>
-                    <a href="#" class="btn btn-success btn-sm m-r-0">View</a>
-                    <a href="#" class="btn btn-default btn-sm m-r-0">Edit</a>
-                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                  </center>
-                </div><!--/card-body-->
-              </div><!--/card-->
-            </div><!--/col-xl-3-->
-          </div><!--/row-->
+      <div class="row">
+        <div class="col-xl-12 mb-12 mb-xl-12">
 
-        </div><!--/header-body-->
-      </div><!--/container-fluid-->
-    </div>
-  </div>
+          <div class="card shadow">
+            <div class="card-header">
+              <strong>Account Details</strong>
+            </div><!--/card-header-->
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6">
+                  <span class="text-dark">Full Name</span><br>
+                  <p>Nyoman Pradipta</p>
+                </div><!--/col-->
+                <div class="col-6">
+                  <span class="text-dark">Room</span><br>
+                  <p>90</p>
+                </div><!--/col-->
+                <div class="col-6">
+                  <span class="text-dark">Phone</span><br>
+                  <p>08176364290</p>
+                </div><!--/col-->
+                <div class="col-6">
+                  <span class="text-dark">Address</span><br>
+                  <p>Jalan pulau jalan nomor jalan di jalan</p>
+                </div><!--/col-->
+              </div><!--/row-->
+            </div><!--/card-body-->
+          </div><!--/card-->
 
+        </div><!--/col-xl-12-->
+      </div><!--/row-->
+
+      <div class="row m-t-30">
+        <div class="col-xl-12 mb-12 mb-xl-12">
+
+          <div class="card shadow">
+            <div class="card-header">
+              <strong>List of Activities</strong>
+            </div><!--/card-header-->
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table align-items-center">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Activity Name</th>
+                      <th scope="col">Person</th>
+                      <th scope="col">Booking Date</th>
+                      <th scope="col">Booking Time</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody class="list">
+                    <tr>
+                      <th scope="row" class="name">
+                        <div class="media align-items-center">
+                          <a href="#" class="avatar rounded-circle mr-3" style="object-fit:cover;">
+                            <img alt="Image placeholder" src="../image/face1.jpg">
+                          </a>
+                          <div class="media-body">
+                            <span class="mb-0 text-sm">Banana Boat</span>
+                          </div>
+                        </div>
+                      </th>
+                      <td class="budget">
+                        2 Person
+                      </td>
+                      <td class="status">
+                        8 May 2019
+                      </td>
+                      <td class="status">
+                        13.00 WITA
+                      </td>
+                      <td class="budget">
+                        IDR. 150.000 
+                      </td>
+                      <td class="budget">
+                        IDR. 300.000 
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="name">
+                        <div class="media align-items-center">
+                          <a href="#" class="avatar rounded-circle mr-3" style="object-fit:cover;">
+                            <img alt="Image placeholder" src="../image/face1.jpg">
+                          </a>
+                          <div class="media-body">
+                            <span class="mb-0 text-sm">Fly fish</span>
+                          </div>
+                        </div>
+                      </th>
+                      <td class="budget">
+                        2 Person
+                      </td>
+                      <td class="status">
+                        8 May 2019
+                      </td>
+                      <td class="status">
+                        13.00 WITA
+                      </td>
+                      <td class="budget">
+                        IDR. 150.000 
+                      </td>
+                      <td class="budget">
+                        IDR. 300.000 
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!--/table-responsive-->
+            </div><!--/card-body-->
+          </div><!--/card-->
+
+        </div><!--/col-xl-12-->
+      </div><!--/row-->
+
+    </div><!--/container-fluid-->
+  </div><!--/main-content-->
   <!--   Core   -->
   <script src="./assets/js/plugins/jquery/dist/jquery.min.js"></script>
   <script src="./assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

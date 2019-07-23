@@ -18,6 +18,19 @@
   <link href="./assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
   <!-- universal css -->
   <link href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/utility.css?alt=media&token=0c57b913-b88f-43f4-a171-fb2d1d924a52" rel="stylesheet" />
+
+  <style>
+    @media screen and (min-width: 1024px) {
+      .column-detail {
+        margin-left: 100px;
+      }
+    }
+    @media screen and (min-width: 1366px) {
+      .column-detail {
+        margin-left: 200px;
+      }
+    }
+  </style>
 </head>
 
 <body class="">
@@ -157,7 +170,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="approve-item.html">
+            <a class="nav-link active " href="approve-item.html">
               <i class="far fa-vote-yea text-info"></i> Approve Item
             </a>
           </li>
@@ -175,7 +188,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active " href="manage-item.html">
+            <a class="nav-link " href="manage-item.html">
               <i class="far fa-edit"></i> Manage Item
             </a>
           </li>
@@ -193,87 +206,169 @@
     <!-- Navbar -->
     <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
       <div class="container-fluid">
-        <!-- Brand -->
-        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./booked.html">MANAGE ITEMS</a>
-        <!-- Form -->
-        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
-          <div class="form-group mb-0">
-            <div class="input-group input-group-alternative">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-search"></i></span>
-              </div>
-              <input class="form-control" placeholder="Search" type="text">
-            </div>
-          </div>
-        </form>
-        <!-- User -->
-        <ul class="navbar-nav align-items-center d-none d-md-flex">
-          <li class="nav-item dropdown">
-            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="media align-items-center">
-                <span class="avatar avatar-sm rounded-circle">
-                  <img alt="Image placeholder" src="./assets/img/theme/team-4-800x800.jpg">
-                </span>
-                <div class="media-body ml-2 d-none d-lg-block">
-                  <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
-                </div>
-              </div>
-            </a>
-            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-              <div class=" dropdown-header noti-title">
-                <h6 class="text-overflow m-0">Welcome!</h6>
-              </div>
-              <a href="./examples/profile.html" class="dropdown-item">
-                <i class="ni ni-single-02"></i>
-                <span>My profile</span>
-              </a>
-              <a href="./examples/profile.html" class="dropdown-item">
-                <i class="ni ni-settings-gear-65"></i>
-                <span>Settings</span>
-              </a>
-              <a href="./examples/profile.html" class="dropdown-item">
-                <i class="ni ni-calendar-grid-58"></i>
-                <span>Activity</span>
-              </a>
-              <a href="./examples/profile.html" class="dropdown-item">
-                <i class="ni ni-support-16"></i>
-                <span>Support</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#!" class="dropdown-item">
-                <i class="ni ni-user-run"></i>
-                <span>Logout</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- End Navbar -->
-    <!-- Header -->
-    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
-      <div class="container-fluid">
-        <div class="header-body">
+        <div class="card card-stats mb-4 mb-lg-0" style="width: 100%">
+          <div class="card-body">
+            <h2 class="text-center m-t-20 m-b-20">ORDER DETAILS</h2>
+            <div class="row column-detail">
 
-          <!-- ITEM -->
-          <div class="row">
-            <div class="col-xl-3 col-lg-6 m-b-20">
-              <div class="card">
-                <img class="card-img-top" src="assets/img/theme/team-1-800x800.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <a href="#"><h4 class="card-title mt--3">Banana Boat</h4></a>
-                  <p class="card-text fs-12 mt--3">IDR. 120.000</p>
-                  <center>
-                    <a href="#" class="btn btn-success btn-sm m-r-0">View</a>
-                    <a href="#" class="btn btn-default btn-sm m-r-0">Edit</a>
-                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                  </center>
-                </div><!--/card-body-->
-              </div><!--/card-->
-            </div><!--/col-xl-3-->
-          </div><!--/row-->
+              <div class="col">
+                <p class="h3 font-weight-normal text-muted mb-0">Invoice Number</p>
+                <p class="fs-16 text-dark mb-10">ZW-5CD1242E8683EINV</p>
 
-        </div><!--/header-body-->
+                <p class="h3 font-weight-normal text-muted mb-0">Order Status</p>
+                <p class="fs-16 text-success font-weight-normal mb-10">Success</p><!-- text-danger if not success -->
+
+                <p class="h3 font-weight-normal text-muted mb-0">Name</p>
+                <p class="fs-16 text-dark mb-10">Paulus Simanjuntak</p>
+
+                <p class="h3 font-weight-normal text-muted mb-0">Phone</p>
+                <p class="fs-16 text-dark mb-10">14045 14022</p>
+              </div><!--/col-->
+
+              <div class="col">
+                <p class="h3 font-weight-normal text-muted mb-0">Payment Method</p>
+                <p class="fs-16 text-danger font-weight-normal mb-10">DP (Down Payment)</p>
+
+                <p class="h3 font-weight-normal text-muted mb-0">Purchase Date</p>
+                <p class="fs-16 text-dark mb-10">07 May 2019, 14:23</p>
+
+                <p class="h3 font-weight-normal text-muted mb-0">Transportation</p>
+                <p class="fs-16 text-dark mb-10">Free pick up by Zooka</p>
+              </div><!--/col-->
+            </div><!--/row-->
+            <hr style="border: 1px dashed #95a5a6;">
+
+            <h2 class="text-left">List of Activities</h2>
+            <div class="table-responsive">
+              <table class="table align-items-center">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Activity Name</th>
+                    <th scope="col">Person</th>
+                    <th scope="col">Booking Date</th>
+                    <th scope="col">Booking Time</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="list">
+                  <tr>
+                    <th scope="row" class="name">
+                      <div class="media align-items-center">
+                        <a href="#" class="avatar rounded-circle mr-3" style="object-fit:cover;">
+                          <img alt="Image placeholder" src="../image/face1.jpg">
+                        </a>
+                        <div class="media-body">
+                          <span class="mb-0 text-sm">Banana Boat</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="budget">
+                      2 Person
+                    </td>
+                    <td class="status">
+                      8 May 2019
+                    </td>
+                    <td class="status">
+                      13.00 WITA
+                    </td>
+                    <td class="budget">
+                      IDR. 150.000 
+                    </td>
+                    <td class="budget">
+                      IDR. 300.000 
+                    </td>
+                    <td class="status">
+                      <span class="text-success font-weight-bold">Success</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="name">
+                      <div class="media align-items-center">
+                        <a href="#" class="avatar rounded-circle mr-3" style="object-fit:cover;">
+                          <img alt="Image placeholder" src="../image/face1.jpg">
+                        </a>
+                        <div class="media-body">
+                          <span class="mb-0 text-sm">Fly fish</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="budget">
+                      2 Person
+                    </td>
+                    <td class="status">
+                      8 May 2019
+                    </td>
+                    <td class="status">
+                      13.00 WITA
+                    </td>
+                    <td class="budget">
+                      IDR. 150.000 
+                    </td>
+                    <td class="budget">
+                      IDR. 300.000 
+                    </td>
+                    <td class="status">
+                      <span class="text-success font-weight-bold">Success</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!--/table-responsive-->
+            <hr style="border: 1px dashed #95a5a6;">
+
+            <h2 class="text-left">Payment</h2>
+
+            <div class="table-responsive">
+              <table class="table align-items-center">
+                <tbody class="list">
+                  <tr>
+                    <th scope="row" class="name">
+                      <span class="mb-0 text-sm">Number of People</span>
+                    </th>
+                    <td class="budget">
+                      2 Persons 
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="name">
+                      <span class="mb-0 text-sm">Paid</span>
+                    </th>
+                    <td class="budget">
+                      IDR. 50.000
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="name">
+                      <span class="mb-0 text-sm">Remaining</span>
+                    </th>
+                    <td class="budget">
+                      IDR. 250.000 
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="name">
+                      <span class="mb-0 text-sm">Total</span>
+                    </th>
+                    <td class="budget">
+                      IDR. 300.000 
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="name">
+                      <span class="mb-0 text-sm">Payment Method</span>
+                    </th>
+                    <td class="budget">
+                      Credit card 
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!--/table-responsive-->
+
+          </div><!--/card-body-->
+        </div><!--/card-->
       </div><!--/container-fluid-->
     </div>
   </div>

@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/payment.css?alt=media&token=7bbd0c50-f94b-4e1c-8f6d-6f2dcccb210c">
     <!-- payment css -->
     <style>
+      .is-orange {
+        color: #FFFFFF !important;
+        border-color: #e67e22 !important;
+        background-color: #e67e22 !important;
+      }
       .has-text-orange{
         color: #e67e22 !important;
       }
@@ -283,7 +288,14 @@
               <!-- ONSITE PAYMENT -->
 
               <button class="button is-dark is-fullwidth is-radiusless">Place order</button>
-              <button class="button is-fullwidth has-text-orange shadow-promo m-t-10">Use ZOOKA's Voucher</button>
+              <button class="button is-fullwidth is-orange is-radiusless shadow-promo m-t-10">Use ZOOKA's Voucher</button>
+              <article class="message is-danger m-t-10">
+                <div class="message-body p-t-5 p-r-5 p-b-5 p-l-10">
+                  <button class="delete is-pulled-right m-l-10 m-b-30" aria-label="delete"></button>
+                  <strong class="fs-14">Diskon IDR. 200.000</strong> <br>
+                  <span class="fs-14">Anda mendapatkan potensi diskon sebanyak IDR. 200.000</span>
+                </div>
+              </article>
             </div><!--/box-->
           </div><!--/column-->
         </div><!--/columns-->

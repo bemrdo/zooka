@@ -112,6 +112,17 @@
   content: 'New';
 }
 
+.wishlisted{
+  background-color: #fefefe;
+  padding: 10px;
+  border-radius: 50% 0 50% 50%;
+  right: 0 !important;
+  top: 0 !important;
+  font-size: 22px;
+  z-index: 100;
+  position: absolute;
+  color: #ff3f34 !important;
+}      
 /* ------------------------------------ */
 .block2-overlay {
   position: absolute;

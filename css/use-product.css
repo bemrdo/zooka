@@ -1,3 +1,34 @@
+.corner-ribbon{
+  width: 65px;
+  height: 25px;
+  font-size: 12px;
+  background: #d63031;
+  position: absolute;
+  text-align: center;
+  line-height: 23px;
+  color: #f0f0f0;
+  border-bottom-right-radius: 20px 20px;
+  z-index: 100;  
+}
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+.corner-ribbon.top-left{
+  top: 0px;
+  left: 0px;
+}
+
+.corner-ribbon.green{background: #079992;}
+.corner-ribbon.red{background: #d63031;}
+/*** DISCOUNT ***/
+
+
 .menu-list #filter-bar {
   margin-right: 6px;
   margin-left: 6px;
@@ -81,36 +112,7 @@
   right: 0px;
 }
 
-.block2-labelsale::before,
-.block2-labelnew::before 
-{
-  z-index: 100;
-  font-size: 12px;
-  color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 65px;
-  height: 25px;
-  border-bottom-right-radius: 20px 20px;
-  position: absolute;
-  top: 12px;
-  left: 0px;
-}
 
-.block2-labelsale::before {
-  background-color: #d63031;
-  content: '70% OFF';
-}
-
-.block2-labelnew::before {
-  background-color: #66a8a6;
-  content: 'New';
-}
 
 .wishlisted{
   background-color: #fefefe;

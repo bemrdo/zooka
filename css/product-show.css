@@ -1,0 +1,266 @@
+.is-paddingless-left{
+  padding-left: 0 !important;
+}
+.rating-show {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 1.2rem;
+  margin-top:2%;
+}
+.rating-show > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating-show > span:hover,
+.rating-show > span:hover ~ span {
+  color: transparent;
+}
+.rating-show > span:hover:before,
+.rating-show > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+   color: gold;
+}
+.switch {
+  position: relative;
+  display: flex;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}    
+  
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}    
+ 
+input:checked + .slider {
+  background-color: #2196F3;
+}    
+ 
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+ 
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.size-baju a{
+  margin-right:5px;
+  min-width:55px;
+  min-height:45px;
+}
+.is-active-size-baju{
+  background-color: #d6d6d6;
+  border: 1px solid #b2b2b2;
+}
+.button-quantity{
+  min-width: 45px;
+  min-height: 45px;
+}
+.button-add{
+  margin-left: 15px;
+  min-height: 45px;
+  font-size: .9rem;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.social-button1{color:#3B5998;}
+.social-button2{color:#55ACEE;}
+.social-button3{color:#dd4b39;}
+.social-button4{color:#007bb5;}
+.social-button5{color:#25D366;}
+.inner {
+padding: 1em;
+background-color: white;
+overflow: hidden;
+position: relative;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.rating {
+float: left;
+width: 45%;
+margin-right: 5%;
+text-align: center;
+}
+.rating-num {
+color: #333333;
+font-size: 72px;
+font-weight: 100;
+line-height: 1em;
+}
+.rating-stars {
+font-size: 20px;
+color: #E3E3E3;
+margin-bottom: .5em;
+}
+.rating-stars .active {
+color: #737373;
+}
+.rating-users {
+font-size: 14px;
+}
+.histo {
+float: left;
+width: 50%;
+font-size: 13px;
+}
+.histo-star {
+float: left;
+padding: 3px;
+}
+.histo-rate {
+width: 100%;
+display: block;
+clear: both;
+}
+.bar-block {
+margin-left: 5px;
+color: black;
+display: block;
+float: left;
+width: 75%;
+position: relative;
+}
+.bar {
+padding: 6px;
+display: block;
+}
+.review-samping{
+font-size: 15px;
+margin-left: 6px;
+color: hotPink;
+top: -4px;
+position: relative;
+}
+.thumb:hover{
+box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+}
+.thumb-play:hover{
+box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+}
+.media{
+margin-top:0.5rem !important;
+}
+.is-text-product{
+font-size:0.9rem;
+}
+.text-shopping{
+margin-right:4%;
+}
+.hr-modal{
+margin-top:1.5%;
+margin-bottom:1.5%;
+}
+.zoom {
+display:inline-block;
+position: relative;
+cursor: zoom-in;
+}
+#tab_container .container_item {
+display: none;
+}
+#tab_container .container_item.is-active {
+display: block;
+}
+#thumbs{
+margin-top:1%;
+margin-left: 2.1%;
+margin-right: 2.1%;
+}
+#thumbs img{
+width:125px;
+height:125px;
+cursor:pointer;
+}
+.big-image{
+width:98%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+/* iPhone 6, 7, & 8 in portrait */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+.breadcrumb{
+margin-top:23%;
+padding-left:1%;
+}
+#thumbs{
+margin-left: 0;
+margin-right: 0;
+}
+#thumbs img{
+width:67px;
+height:67px;
+margin-left:1%;
+}
+.is-text-product{
+font-size:0.7rem;
+}
+#charNum{
+font-size:0.7rem;
+margin-top:1%;
+}
+
+} 
+/* iPhone 6, 7, & 8 Plus in portrait */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+#thumbs img{
+  width:75px;
+  height:75px;
+}
+.is-text-product{
+  font-size:0.7rem;
+}
+#charNum{
+  font-size:0.7rem;
+  margin-top:1%;
+}
+
+}
+ /* For 1366 Resolution */
+@media only screen and (min-width: 1030px) and (max-width: 1366px){
+#thumbs img{
+  width:107px;
+  height:107px;
+}
+
+}
+

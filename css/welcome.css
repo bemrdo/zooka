@@ -1,0 +1,49 @@
+.column .item-product:first-child { 
+  margin-top: -250px !important;
+} 
+.has-background-transparent {
+  background: transparent !important;
+}
+.is-zooka-orange {
+  background-color: #E67E22;
+  border-color: transparent;
+  color: #fff;
+}
+.is-zooka-tag{
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+}
+.is-zooka-tag:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(230,126,34,0.55);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(230,126,34,0.55);
+  box-shadow: 0px 0px 6px 0px rgba(230,126,34,0.55);
+}
+.has-text-zooka-orange {
+  color: #e67e22;
+}
+.explore{
+  align-items: center;
+}
+.border-benefit{
+  border: .08em solid #fff;
+  border-radius: 50%;
+  padding: .2em .25em .15em;
+}
+@media screen and (min-width: 1088px) {
+  .first-benefit{
+    padding-left: 0px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .image img.custom-img{
+    height: 322px !important;
+  }
+}
+@media screen and (min-width: 1472px) {
+  .custom-img{
+    height: 444px !important;
+  }
+}

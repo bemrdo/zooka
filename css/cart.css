@@ -1,0 +1,42 @@
+      .size-person{
+        width: 32px;
+        height: 31px;
+      }
+      .size-input-person{
+        width: 45px;
+        height: 31px;
+      }
+      .has-text-alizarin{
+        color: #e74c3c !important;
+      }
+      input[type=checkbox].checkbox-product{
+        vertical-align: middle;
+      }
+      .field.is-checkradio.is-white{
+        background-color: black;
+      }
+      .is-checkradio[type=checkbox].is-white:checked+label::before, 
+      .is-checkradio[type=checkbox].is-white:checked+label:before{ 
+        border: .1rem solid #f5f5f5;
+        background-color: #f5f5f5;
+      }
+      .is-checkradio[type=checkbox].is-white:checked+label::after, 
+      .is-checkradio[type=checkbox].is-white:checked+label:after {
+        border-color: #e67e22 !important;
+      }
+      .is-checkradio[type=checkbox].is-white+label::before, 
+      .is-checkradio[type=checkbox].is-white+label:before {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        content: '';
+        border: .1rem solid #f5f5f5;
+        background-color: #f5f5f5;
+      }
+      .is-checkradio[type=checkbox].is-white:checked+label::before, .is-checkradio[type=checkbox].is-white:checked+label:before {
+        border: .1rem solid #e67e22;
+        background-color: #f5f5f5;
+      }
+      .is-checkradio[type=checkbox].is-white:checked+label::before:hover, .is-checkradio[type=checkbox].is-white:checked+label:before:hover {
+        border: .1rem solid #d35400;
+      }

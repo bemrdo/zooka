@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZOOKA</title>
+    <!-- header & footer use this css -->
+    <link rel="icon" href="image/web-logo-thumbnails.png">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bulma-badge.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <!-- header & footer use this css -->
+
+    <!-- universal css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- universal css -->
+
+    <!-- Promo css -->
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/zooka-webtest.appspot.com/o/input-promo.css?alt=media&token=08451588-266c-460f-8628-eb881091630e">
+
+    <style>
+      .img-popup{
+        width:80%; height:80%; margin: auto; margin-top:0; position: absolute;
+      }
+      .button-x{
+        z-index:99; 
+        top: 75px;
+        right: 130px; 
+        padding:5px; 
+        border:2px solid white !important;
+      }
+      @media screen and (max-width: 320px) {
+        .button-x{
+          top: 75px !important;
+          right: 25px !important; 
+        }
+      }
+      @media screen and (max-width: 375px) {
+        .button-x{
+          top: 75px !important;
+          right: 28px !important; 
+        }
+      }
+      @media screen and (max-width: 425px) {
+        .img-popup{
+          width: 90% !important;
+          height: 90% !important;
+        }
+        .button-x{
+          top: 75px !important;
+          right: 30px !important; 
+        }
+      }
+      @media screen and (max-width: 768px) and (min-width: 640px){
+        .mch{
+          margin-top: -50px;
+        }
+        .button-x{
+          top: 75px !important;
+          right: 155px !important; 
+        }
+      }
+      @media screen and (min-width: 426px) {
+        .img-popup{
+          width: 60% !important;
+          height: 60% !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+<div class="modal is-active">
+  <div class="modal-background"></div>
+  <div class="modal-content" style="overflow:hidden;">
+    <header class="modal-card-head mch" style="background:transparent; border-bottom:none;">
+      <p class="modal-card-title"></p>
+      <button class="button is-medium delete is-black button-x" data-dismiss="modal" aria-hidden="true"></button>
+    </header>
+    <section class="modal-card-body" style="background:transparent;">
+      <p class="image is-4by5">
+        <img class="img-popup" src="https://bulma.io/images/placeholders/480x600.png" alt="" style="" >
+      </p>
+    </section>
+  </div>
+</div>
+
+    <script src="js/bulma.js"></script>
+  </body>
+</html>
